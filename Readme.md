@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николаев Игорь](https://up.htmlacademy.ru/adaptive/15/user/574459).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/adaptive/15/user/215761).
 
 ---
 
