@@ -28,7 +28,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__main-title title__main--small">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-main__main-title">Милые штуки ручной работы для дома</h1>
       <section class="catalog-intro">
         <h2 class="visually-hidden">Наш каталог готовых изделий</h2>
         <nav class="catalog-intro__nav">
@@ -43,7 +43,7 @@
         </nav>
       </section>
       <section class="advertising">
-        <h2 class="advertising__title title--small">Вязаные корзинки</h2>
+        <h2 class="advertising__title">Вязаные корзинки</h2>
         <b class="advertising__remark">Товар недели</b>
         <p class="advertising__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
@@ -87,7 +87,7 @@
         </div>
       </section>
       <section class="advantages">
-        <h2 class="advantages__title title--small">Коротко о нас:</h2>
+        <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--material">
             Экологически чистые материалы
@@ -110,23 +110,23 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title title--small">Отзывы</h2>
+        <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item">
           <p class="reviews__text">
             Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </p>
-          <cite class="reviews__author">Анастасия Красильникова <span class="reviews__author--twitter">@misssssiskras</span></cite>
+          <cite class="reviews__author">Анастасия Красильникова <span class="reviews__author-twitter">@misssssiskras</span></cite>
         </blockquote>
-        <div class="reviews__toggle">
-          <button class="reviews__toggle--prev" type="button">Назад</button>
-          <button class="reviews__toggle--next" type="button">Вперёд</button>
+        <div class="reviews__toggles">
+          <button class="reviews__toggle reviews__toggle--prev" type="button">Назад</button>
+          <button class="reviews__toggle reviews__toggle--next" type="button">Вперёд</button>
         </div>
         <a class="reviews__button button" href="reviews-small.html" title="Переход в форму написания отзыва">
           Написать
         </a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title title--small">Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__wrapper-email">
           <p class="contacts__email-title">
             e-mail:
@@ -172,23 +172,25 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
-    <form class="goods-addition goods-addition--modal" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="goods-addition__title title--small">Добавить в корзину</h2>
-      <p class="goods-addition__offer">
-        Выберите размер:
-      </p>
-      <div class="goods-addition__sizes sizes-list">
-        <label class="sizes-list__item">S
-          <input class="sizes-list__item-field sizes-list__item-field--s" type="radio" name="sizes" value="s" checked>
-        </label>
-        <label class="sizes-list__item">M
-          <input class="sizes-list__item-field sizes-list__item-field--m" type="radio" name="sizes" value="m">
-        </label>
-        <label class="sizes-list__item">L
-          <input class="sizes-list__item-field sizes-list__item-field--l" type="radio" name="sizes" value="l">
-        </label>
-      </div>
-      <button class="goods-addition__button button" type="submit">Добавить</button>
-    </form>
+    <div class="modal modal__goods-addition">
+      <form class="goods-addition" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="goods-addition__title">Добавить в корзину</h2>
+        <p class="goods-addition__offer">
+          Выберите размер:
+        </p>
+        <div class="goods-addition__sizes sizes-list">
+          <label class="sizes-list__item">S
+            <input class="sizes-list__item-field sizes-list__item-field--s" type="radio" name="sizes" value="s" checked>
+          </label>
+          <label class="sizes-list__item">M
+            <input class="sizes-list__item-field sizes-list__item-field--m" type="radio" name="sizes" value="m">
+          </label>
+          <label class="sizes-list__item">L
+            <input class="sizes-list__item-field sizes-list__item-field--l" type="radio" name="sizes" value="l">
+          </label>
+        </div>
+        <button class="goods-addition__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
