@@ -13,16 +13,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--catalog">
-            <a class="main-nav__link main-nav__link--catalog" href="catalog-small.html" title="Переход на страницу каталога">Каталог товаров</a>
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html" title="Переход на страницу каталога">Каталог товаров</a>
           </li>
           <li class="main-nav__item main-nav__item--form">
-            <a class="main-nav__link main-nav__link--form" href="form-small.html" title="Переход на страницу формы заказа">Вязание на заказ</a>
+            <a class="main-nav__link main-nav__link--form" href="form.html" title="Переход на страницу формы заказа">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link main-nav__link--search" href="search-small.html" title="Переход на страницу поиска товаров на сайте">Поиск по сайту</a>
+            <a class="main-nav__link main-nav__link--search" href="search.html" title="Переход на страницу поиска товаров на сайте">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__link main-nav__link--cart" href="cart-small.html" title="Переход в корзину выбранных товаров и заказов">Корзина: <span>пока пуста</span></a>
+            <a class="main-nav__link main-nav__link--cart" href="cart.html" title="Переход в корзину выбранных товаров и заказов">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
       </nav>
@@ -172,13 +172,13 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
-    <div class="modal modal--goods-addition">
-      <form class="goods-addition" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="goods-addition__title">Добавить в корзину</h2>
-        <p class="goods-addition__offer">
+    <section class="order-modal order-modal--page-main">
+      <form class="order-modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="modal-form__title">Добавить в корзину</h2>
+        <p class="modal-form__offer">
           Выберите размер:
         </p>
-        <div class="goods-addition__sizes sizes-list">
+        <div class="modal-form__sizes sizes-list">
           <label class="sizes-list__item">S
             <input class="sizes-list__item-field sizes-list__item-field--s" type="radio" name="sizes" value="s" checked>
           </label>
@@ -189,8 +189,8 @@
             <input class="sizes-list__item-field sizes-list__item-field--l" type="radio" name="sizes" value="l">
           </label>
         </div>
-        <button class="goods-addition__button button" type="submit">Добавить</button>
+        <button class="modal-form__button button" type="submit">Добавить</button>
       </form>
-    </div>
+    </section>
   </body>
 </html>
