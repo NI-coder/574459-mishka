@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-container">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__nav main-nav">
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">x</button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link main-nav__link--catalog" href="catalog.html" title="Переход на страницу каталога">Каталог товаров</a>
@@ -28,7 +32,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__main-title">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-main__main-title">Милые штуки ручной<br>работы для дома</h1>
       <section class="catalog-intro">
         <h2 class="visually-hidden">Наш каталог готовых изделий</h2>
         <nav class="catalog-intro__nav">
