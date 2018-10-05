@@ -1,0 +1,31 @@
+.sizes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 260px;
+  height: 52px;
+  margin-bottom: 31px;
+}
+
+.sizes-list__item {
+  width: 82px;
+  height: 52px;
+
+  border: 2px solid rgb(236, 236, 236);
+}
+
+.sizes-list__item-field {
+  display: none;
+}
+
+.modal-form__button {
+  width: 260px;
+
+  font-size: 17px;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+
+  border: none;
+  background-color: rgb(99, 209, 187);
+}

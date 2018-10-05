@@ -2,15 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-container">
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <div class="main-nav__logo-wrapper">
-          <a class="main-nav__logo" href="#">
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link" href="#">
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">x</button>
@@ -38,10 +38,10 @@
         <nav class="catalog-intro__nav">
           <ul class="catalog-intro__list">
             <li class="catalog-intro__item">
-              <a class="catalog-intro__link catalog-intro__link--interior" href="catalog-interior-small.html">Предметы интерьера</a>
+              <a class="catalog-intro__link catalog-intro__link--interior" href="catalog-interior.html"><span class="catalog-intro__link-inner">Предметы интерьера</span></a>
             </li>
             <li class="catalog-intro__item">
-              <a class="catalog-intro__link catalog-intro__link--toys" href="catalog-toys-small.html">Детские игрушки</a>
+              <a class="catalog-intro__link catalog-intro__link--toys" href="catalog-toys.html"><span class="catalog-intro__link-inner">Детские игрушки</span></a>
             </li>
           </ul>
         </nav>
@@ -79,7 +79,7 @@
           </tr>
         </table>
         <p class="advertising__image-wrapper">
-          <img class="advertising__image" src="http://placehold.it/150x100" width="260" height="315" alt="Иллюстрация набора корзинок">
+          <img class="advertising__image" src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Иллюстрация набора корзинок">
         </p>
         <div class="advertising__price-wrapper">
           <p class="advertising__price">
@@ -94,22 +94,22 @@
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--material">
-            Экологически чистые материалы
+            Экологически<br>чистые материалы
           </li>
           <li class="advantages__item advantages__item--style">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль<br>по российской цене
           </li>
           <li class="advantages__item advantages__item--social">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки<br>на фотографиях
           </li>
           <li class="advantages__item advantages__item--handmade">
-            Связано вручную с любовью и умилением
+            Связано вручную с<br>любовью и умилением
           </li>
           <li class="advantages__item advantages__item--patriotic">
             Поддержка отечественного производителя
           </li>
           <li class="advantages__item advantages__item--packaging">
-            Поставляется в подарочной упаковке
+            Поставляется в<br>подарочной упаковке
           </li>
         </ul>
       </section>
@@ -130,26 +130,31 @@
         </a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__wrapper-email">
-          <p class="contacts__email-title">
-            e-mail:
-          </p>
-          <p class="contacts__email">
-            info@mimimishkashop.ru
-          </p>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__inner">
+            <p class="contacts__item">
+              e-mail:
+            </p>
+            <p class="contacts__text">
+              info@mimimishkashop.ru
+            </p>
+          </div>
+          <div class="contacts__inner">
+            <p class="contacts__item">
+              адрес:
+            </p>
+            <p class="contacts__text">
+              г.Санкт-Петербург,<br>
+              ул. Большая Конюшенная,<br>
+              д. 19/8, офис 101
+            </p>
+          </div>
+          <a class="contacts__button contacts__button--desktop button" href="contacts-small.html" title="Переход в форму обратной связи">
+            Напишите нам
+          </a>
         </div>
-        <div class="contacts__wrapper-address">
-          <p class="contacts__address-title">
-            адрес:
-          </p>
-          <p class="contacts__address">
-            г.Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101
-          </p>
-        </div>
-        <p class="map">
+        <p class="contacts__map map">
           Карта
         </p>
         <a class="contacts__button button" href="contacts-small.html" title="Переход в форму обратной связи">
@@ -158,25 +163,40 @@
       </section>
     </main>
     <footer class="page-footer">
+      <p class="page-footer__logo page-footer__logo--mobile">
+        <a class="page-footer__logo-link" href="index.html" title="Переход на главную страницу">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина «Мишка»">
+        </a>
+      </p>
       <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-          </li>
-        </ul>
+        <div class="page-footer__social-wrapper">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <img class="social__link-image" src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <img class="social__link-image" src="img/icon-fb.svg" width="15" height="28" alt="Мы в Фейсбуке">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <img class="social__link-image" src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Твиттере">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
-    <section class="order-modal order-modal--page-main">
+    <section class="order-modal">
       <form class="order-modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal-form__title">Добавить в корзину</h2>
         <p class="modal-form__offer">

@@ -1,0 +1,68 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+
+  background-image: url("../../img/bg-zigzag-line-mini.svg");
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+
+  line-height: 20px;
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+  padding-top: 55px;
+  padding-left: 5px;
+
+  background-repeat: no-repeat;
+}
+
+.advantages__item--material {
+  background-image: url("../../img/icon-feature-flower.svg");
+  background-position: 14px 0;
+}
+
+.advantages__item--style {
+  background-image: url("../../img/icon-feature-money.svg");
+  background-position: 5px 0;
+}
+
+.advantages__item--social {
+  background-image: url("../../img/icon-feature-heart.svg");
+  background-position: 13px 0;
+}
+
+.advantages__item--handmade {
+  background-image: url("../../img/icon-feature-ball.svg");
+  background-position: 9px 0;
+}
+
+.advantages__item--patriotic {
+  background-image: url("../../img/icon-feature-rocket.svg");
+  background-position: 0 0;
+}
+
+.advantages__item--packaging {
+  background-image: url("../../img/icon-feature-gift.svg");
+  background-position: 9px 0;
+}
