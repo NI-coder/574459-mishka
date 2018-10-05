@@ -1,4 +1,4 @@
-.sizes-list {
+.modal-form__sizes-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,24 +8,13 @@
   margin-bottom: 31px;
 }
 
-.sizes-list__item {
+.modal-form__sizes-item {
   width: 82px;
   height: 52px;
 
   border: 2px solid rgb(236, 236, 236);
 }
 
-.sizes-list__item-field {
+.modal-form__sizes-field {
   display: none;
-}
-
-.modal-form__button {
-  width: 260px;
-
-  font-size: 17px;
-  line-height: 16px;
-  color: rgb(255, 255, 255);
-
-  border: none;
-  background-color: rgb(99, 209, 187);
 }
