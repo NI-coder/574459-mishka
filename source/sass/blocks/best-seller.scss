@@ -1,11 +1,11 @@
-.advertising {
+.best-seller {
   width: 320px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.advertising__title {
+.best-seller__title {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -14,7 +14,7 @@
   line-height: 30px;
 }
 
-.advertising__remark {
+.best-seller__remark {
   display: block;
   margin-bottom: 30px;
 
@@ -24,7 +24,7 @@
   color: rgb(99, 209, 187);
 }
 
-.advertising__description {
+.best-seller__description {
   width: 260px;
   margin: 0;
   margin-bottom: 30px;
@@ -34,7 +34,7 @@
   font-weight: 400;
 }
 
-.advertising__details {
+.best-seller__details {
   margin-bottom: 30px;
 
   font-size: 15px;
@@ -44,7 +44,7 @@
   border-collapse: collapse;
 }
 
-.advertising__property {
+.best-seller__property {
   width: 100px;
   height: 40px;
 
@@ -53,12 +53,12 @@
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-.advertising__value {
+.best-seller__value {
   width: 160px;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
-.advertising__image-wrapper {
+.best-seller__image-wrapper {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -66,16 +66,16 @@
   line-height: 0;
 }
 
-.advertising__price-wrapper {
+.best-seller__price-wrapper {
   width: 260px;
 }
 
-.advertising__price {
+.best-seller__price {
   margin-bottom: 25px;
 
   text-align: center;
 }
 
-.advertising__button {
+.best-seller__button {
   margin-bottom: 35px;
 }
