@@ -1,0 +1,131 @@
+.form {
+  width: 320px;
+}
+
+.form__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.form__item--colour,
+.form__label--single {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgb(99, 209, 187);
+}
+
+.form__inner {
+  margin: 0;
+  padding: 0;
+
+  line-height: 18px;
+}
+
+.form__inner--type,
+.form__inner--colour {
+  min-height: 40px;
+  margin-bottom: 21px;
+}
+
+.form__inner--colour {
+  min-width: 260px;
+}
+
+.form__inner--name {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__label--text {
+  display: block;
+  margin: 0;
+  margin-right: 25px;
+  padding: 0;
+}
+
+.form__label--text-name {
+  width: 48px;
+}
+
+.form__label--text-surname {
+  width: 101px;
+}
+
+.form__label--text-patronymic {
+  width: 101px;
+}
+
+.form__input--text {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  margin-bottom: 24px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3);
+
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.form__label--single {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgb(99, 209, 187);
+}
+
+.form__textarea {
+  display: block;
+  width: 100%;
+  min-height: 142px;
+  margin: 0;
+  padding: 15px;
+  margin-bottom: 17px;
+}
+
+.form__note {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+.form__button {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+
+  line-height: 16px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+}

@@ -127,22 +127,37 @@
       <a class="page-catalog__button button" href="form.html" title="Переход на страницу заказа товаров">Сделать заказ</a>
     </main>
     <footer class="page-footer">
+      <p class="page-footer__logo page-footer__logo--mobile">
+        <a class="page-footer__logo-link" href="index.html" title="Переход на главную страницу">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина «Мишка»">
+        </a>
+      </p>
       <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-          </li>
-        </ul>
+        <div class="page-footer__social-wrapper">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <img class="social__link-image" src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <img class="social__link-image" src="img/icon-fb.svg" width="15" height="28" alt="Мы в Фейсбуке">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <img class="social__link-image" src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Твиттере">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
     <section class="order-modal">
@@ -151,15 +166,15 @@
         <p class="modal-form__offer">
           Выберите размер:
         </p>
-        <div class="modal-form__sizes sizes-list">
-          <label class="sizes-list__item">S
-            <input class="sizes-list__item-field sizes-list__item-field--s" type="radio" name="sizes" value="s" checked>
+        <div class="modal-form__sizes-list">
+          <label class="modal-form__sizes-item">S
+            <input class="modal-form__sizes-field" type="radio" name="sizes" value="s" checked>
           </label>
-          <label class="sizes-list__item">M
-            <input class="sizes-list__item-field sizes-list__item-field--m" type="radio" name="sizes" value="m">
+          <label class="modal-form__sizes-item">M
+            <input class="modal-form__sizes-field" type="radio" name="sizes" value="m">
           </label>
-          <label class="sizes-list__item">L
-            <input class="sizes-list__item-field sizes-list__item-field--l" type="radio" name="sizes" value="l">
+          <label class="modal-form__sizes-item">L
+            <input class="modal-form__sizes-field" type="radio" name="sizes" value="l">
           </label>
         </div>
         <button class="modal-form__button button" type="submit">Добавить</button>

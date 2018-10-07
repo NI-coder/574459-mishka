@@ -1,0 +1,32 @@
+.order-form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.order-form__title {
+  min-height: 177px;
+  margin: 0;
+  padding: 0;
+  padding-top: 72px;
+  padding-bottom: 77px;
+  margin-bottom: 25px;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(35, 31, 32);
+
+  background-color: rgb(241, 241, 241);
+}
+
+.order-form__intro {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 27px;
+
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
