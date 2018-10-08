@@ -1,0 +1,47 @@
+.production-video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 58px;
+
+  border: 1px solid rgb(237, 237, 237);
+}
+
+.production-video__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-left: 90px;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.production-video__video-wrapper {
+  margin: 0;
+  padding: 0;
+
+  line-height: 0;
+}
+
+.production-video__intro {
+  margin: 0;
+  padding: 33px 34px;
+
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+.page-catalog__button {
+  width: 192px;
+  padding-top: 15px;
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 33px;
+
+  line-height: 16px;
+}

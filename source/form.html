@@ -2,15 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-container">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html" title="Переход на главную страницу">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__nav main-nav">
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link" href="index.html" title="Переход на главную страницу">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">x</button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link main-nav__link--catalog" href="catalog.html" title="Переход на страницу каталога">Каталог товаров</a>
@@ -35,10 +39,10 @@
           Мы будем рады воплотить в жизнь ваши пожедания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="order-form__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__item form__item--type">
-            <legend class="form__legend">
+          <section class="form__item form__item--type">
+            <h3 class="form__title">
               Тип
-            </legend>
+            </h3>
             <p class="form__inner form__inner--type">
               <input class="form__input form__input--radio" id="type-interier" type="radio" name="type" value="interier" checked>
               <label class="form__label form__label--radio" for="type-interier">Аксессуар для интерьера</label>
@@ -47,11 +51,9 @@
               <input class="form__input form__input--radio" id="type-toy" type="radio" name="type" value="toy">
               <label class="form__label form__label--radio" for="type-toy">Детская игрушка</label>
             </p>
-          </fieldset>
-          <fieldset class="form__item form__item--colour">
-            <legend class="form__legend">
-              Цвет
-            </legend>
+          </section>
+          <section class="form__item form__item--colour">
+            <h3 class="form__title">Цвет</h3>
             <p class="form__inner form__inner--colour">
               <input class="form__input form__input--checkbox" id="colour-white-field" type="checkbox" name="colour-white" checked>
               <label class="form__label form__label--checkbox" for="colour-white-field">Белый</label>
@@ -76,35 +78,35 @@
               <input class="form__input form__input--checkbox" id="colour-orange-field" type="checkbox" name="colour-orange">
               <label class="form__label form__label--checkbox" for="colour-orange-field">Оранжевый</label>
             </p>
-          </fieldset>
-          <fieldset class="form__item form__item--name">
-            <legend class="form__legend">
+          </section>
+          <section class="form__item form__item--name">
+            <h3 class="form__title">
               ФИО
-            </legend>
+            </h3>
             <p class="form__inner form__inner--name">
-              <label class="form__label form__label--text" for="first-name-field">Имя:</label>
+              <label class="form__label form__label--text form__label--text-name" for="first-name-field">Имя:</label>
               <input class="form__input form__input--text" id="first-name-field" type="text" name="first-name" placeholder="Введите ваше имя*" required>
             </p>
             <p class="form__inner form__inner--name">
-              <label class="form__label form__label--text" for="surname-field">Фамилия:</label>
+              <label class="form__label form__label--text form__label--text-surname" for="surname-field">Фамилия:</label>
               <input class="form__input form__input--text" id="surname-field" type="text" name="surname" placeholder="Укажите фамилию*" required>
             </p>
             <p class="form__inner form__inner--name">
-              <label class="form__label form__label--text" for="patronymic-field">Отчество:</label>
+              <label class="form__label form__label--text form__label--text-patronymic" for="patronymic-field">Отчество:</label>
               <input class="form__input form__input--text" id="patronymic-field" type="text" name="patronymic" placeholder="Отчество, если желаете">
             </p>
-          </fieldset>
+          </section>
           <p class="form__item">
-            <label class="form__label form__label--small" for="phone-field">Тел</label>
+            <label class="form__label form__label--single" for="phone-field">Тел</label>
             <input class="form__input form__input--text" id="phone-field" type="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="phone" placeholder="+7 XXX XXX XX XX*" required>
           </p>
           <p class="form__item">
-            <label class="form__label form__label--small" for="email-field">E-mail</label>
+            <label class="form__label form__label--single" for="email-field">E-mail</label>
             <input class="form__input form__input--text" id="email-field" type="email" name="email" placeholder="Ваш Email*" required>
           </p>
           <p class="form__item">
-            <label class="form__label form__label--small" for="addition-field">Доп</label>
-            <textarea class="form__textarea" id="addition-field" name="addition" rows="8" cols="30" placeholder="Опишите все ваши пожелания по заказу"></textarea>
+            <label class="form__label form__label--single" for="addition-field">Доп</label>
+            <textarea class="form__textarea" id="addition-field" name="addition" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </p>
           <p class="form__note">
             *Поля обязательны для заполнения
@@ -112,25 +114,40 @@
           <button class="form__button button" type="submit">Отправить заказ</button>
         </form>
       </section>
-      <footer class="page-footer">
-        <div class="page-footer__social social">
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__logo page-footer__logo--mobile">
+        <a class="page-footer__logo-link" href="index.html" title="Переход на главную страницу">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина «Мишка»">
+        </a>
+      </p>
+      <div class="page-footer__social social">
+        <div class="page-footer__social-wrapper">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="#">
+                <img class="social__link-image" src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="#">
+                <img class="social__link-image" src="img/icon-fb.svg" width="15" height="28" alt="Мы в Фейсбуке">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="#">
+                <img class="social__link-image" src="img/icon-twitter.svg" width="23" height="20" alt="Мы в Твиттере">
+              </a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </footer>
-    </main>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
