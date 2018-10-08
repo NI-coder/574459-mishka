@@ -1,0 +1,31 @@
+.page-catalog {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-catalog__title {
+  min-height: 177px;
+  margin: 0;
+  padding: 0;
+  padding-top: 72px;
+  padding-bottom: 77px;
+  margin-bottom: 30px;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+
+  background-color: rgb(241, 241, 241);
+}
+
+.page-catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  list-style: none;
+}
