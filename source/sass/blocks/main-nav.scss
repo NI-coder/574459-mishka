@@ -1,5 +1,5 @@
 .main-nav {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
   min-height: 79px;
   padding-top: 22px;
 
-  border-bottom: 1px solid rgb(236, 236, 236);
+  border-bottom: 1px solid $light-gray;
 }
 
 .main-nav__logo-link {
@@ -35,8 +35,7 @@
 
 .main-nav__list {
   display: block;
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
 
   list-style: none;
 }
@@ -49,7 +48,7 @@
   padding-top: 25px;
   padding-bottom: 30px;
 
-  border-bottom: 1px solid rgb(236, 236, 236);
+  border-bottom: 1px solid $light-gray;
 }
 
 .main-nav__link {

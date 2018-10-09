@@ -1,15 +1,14 @@
 .button {
   display: block;
-  height: 52px;
-  margin: 0;
-  padding: 0;
+  height: $cell-height;
+  @include zero-indent;
 
   font-size: 17px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(68, 68, 68);
+  background-color: $white;
+  border: 2px solid $text-color;
 }

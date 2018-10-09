@@ -1,5 +1,5 @@
 .modal-form {
-  width: 320px;
+  width: $mobile-width;
   min-height: 336px;
   margin: 0 auto;
   padding-top: 35px;
@@ -20,9 +20,8 @@
 }
 
 .modal-form__offer {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 25px;
-  padding: 0;
 
   font-size: 15px;
   line-height: 30px;
@@ -35,16 +34,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 260px;
-  height: 52px;
+  width: $mobile-container;
+  height: $cell-height;
   margin-bottom: 31px;
 }
 
 .modal-form__sizes-item {
   width: 82px;
-  height: 52px;
+  height: $cell-height;
 
-  border: 2px solid rgb(236, 236, 236);
+  border: 2px solid $light-gray;
 }
 
 .modal-form__sizes-field {
@@ -52,12 +51,12 @@
 }
 
 .modal-form__button {
-  width: 260px;
+  width: $mobile-container;
 
   font-size: 17px;
   line-height: 16px;
-  color: rgb(255, 255, 255);
+  color: $white;
 
   border: none;
-  background-color: rgb(99, 209, 187);
+  background-color: $green;
 }

@@ -1,10 +1,9 @@
 .form {
-  width: 320px;
+  width: $mobile-width;
 }
 
 .form__item {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 10px;
@@ -19,19 +18,17 @@
 .form__title {
   display: block;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   margin-bottom: 25px;
 
   font-size: 17px;
-  line-height: 18px;
+  line-height: 16px;
   text-transform: uppercase;
-  color: rgb(99, 209, 187);
+  color: $green;
 }
 
 .form__inner {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
 
   line-height: 18px;
 }
@@ -43,7 +40,7 @@
 }
 
 .form__inner--colour {
-  min-width: 260px;
+  min-width: $mobile-container;
 }
 
 .form__inner--name {
@@ -53,9 +50,8 @@
 
 .form__label--text {
   display: block;
-  margin: 0;
+  @include zero-indent;
   margin-right: 25px;
-  padding: 0;
 }
 
 .form__label--text-name {
@@ -73,29 +69,28 @@
 .form__input--text {
   display: block;
   width: 100%;
-  min-height: 52px;
+  min-height: $cell-height;
   margin-bottom: 24px;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  color: rgba(68, 68, 68, 0.3);
+  color: $fade-text;
 
   border: none;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid $black;
 }
 
 .form__label--single {
   display: block;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   margin-bottom: 5px;
 
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
-  color: rgb(99, 209, 187);
+  color: $green;
 }
 
 .form__textarea {
@@ -105,11 +100,12 @@
   margin: 0;
   padding: 15px;
   margin-bottom: 17px;
+
+  border: 2px solid $text-color;
 }
 
 .form__note {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 30px;
@@ -117,15 +113,15 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }
 
 .form__button {
-  width: 260px;
+  width: $mobile-container;
   margin: 0 auto;
   margin-bottom: 55px;
 
   line-height: 16px;
   font-weight: 700;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }

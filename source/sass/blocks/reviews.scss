@@ -1,5 +1,5 @@
 .reviews {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -7,34 +7,30 @@
 }
 
 .reviews__title {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 30px;
-  padding: 0;
 
   font-size: 25px;
   line-height: 30px;
 }
 
 .reviews__item {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 35px;
-  padding: 0;
 }
 
 .reviews__text {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 35px;
-  padding: 0;
 
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }
 
 .reviews__author {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
 
   font-style: normal;
 }
@@ -43,26 +39,25 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }
 
 .reviews__toggles {
-  width: 260px;
-  height: 52px;
+  width: $mobile-container;
+  height: $cell-height;
 
-  color: rgb(0, 0, 0);
+  color: $black;
 
-  border: 1px solid rgb(236, 236, 236);
+  border: 1px solid $light-gray;
 }
 
 .reviews__toggle {
   display: block;
   width: 128px;
-  height: 52px;
-  margin: 0;
-  padding: 0;
+  height: $cell-height;
+  @include zero-indent;
 
-  background-color: rgba(255, 255, 255, 0);
+  background-color: $transparent;
   border: none;
 }
 
@@ -75,7 +70,7 @@
 }
 
 .reviews__button {
-  width: 260px;
+  width: $mobile-container;
   margin-top: 38px;
 
   font-size: 18px;

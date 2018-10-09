@@ -1,5 +1,5 @@
 .advantages {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding-top: 40px;
   padding-left: 25px;
@@ -11,9 +11,8 @@
 }
 
 .advantages__title {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 30px;
-  padding: 0;
   padding-left: 5px;
 
   font-size: 25px;
@@ -21,9 +20,8 @@
 }
 
 .advantages__list {
-  width: 260px;
-  margin: 0;
-  padding: 0;
+  width: $mobile-container;
+  @include zero-indent;
 
   line-height: 20px;
   list-style: none;

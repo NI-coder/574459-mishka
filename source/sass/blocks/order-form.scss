@@ -1,12 +1,11 @@
 .order-form {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
 .order-form__title {
   min-height: 177px;
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   padding-top: 72px;
   padding-bottom: 77px;
   margin-bottom: 25px;
@@ -16,17 +15,16 @@
   text-align: center;
   color: rgb(35, 31, 32);
 
-  background-color: rgb(241, 241, 241);
+  background-color: $bg-gray;
 }
 
 .order-form__intro {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 27px;
 
   font-size: 13px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }
