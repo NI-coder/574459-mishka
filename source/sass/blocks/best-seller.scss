@@ -22,6 +22,7 @@
 }
 
 .best-seller__description {
+  width: $mobile-container;
   @include zero-indent;
   margin-bottom: 30px;
 
@@ -75,4 +76,72 @@
 
 .best-seller__button {
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .best-seller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tablet-width;
+    padding: 50px;
+  }
+
+  .best-seller__title {
+    width: 500px;
+    margin-bottom: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .best-seller__remark {
+    width: 125px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .best-seller__inner {
+    position: relative;
+    width: 290px;
+  }
+
+  .best-seller__value {
+    width: 190px;
+  }
+
+  .best-seller__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-seller__image-wrapper {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 334px;
+
+    width: 333px;
+    height: 404px;
+  }
+
+  .best-seller__details {
+    margin-bottom: 60px;
+  }
+
+  .best-seller__price {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+
+  .best-seller__button {
+    width: 292px;
+    margin: 0;
+  }
+
+
+
+
+
 }

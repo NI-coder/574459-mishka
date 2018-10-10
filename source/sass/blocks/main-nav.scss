@@ -3,14 +3,42 @@
   margin: 0 auto;
 }
 
-.main-nav__logo {
-  position: relative;
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include zero-indent;
 
+  list-style: none;
+}
+
+.main-nav__item {
   display: block;
+  width: $mobile-width;
   min-height: 79px;
-  padding-top: 22px;
+  margin: 0;
+  padding-left: 76px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 
   border-bottom: 1px solid $light-gray;
+}
+
+.main-nav__item--logo {
+  position: relative;
+
+  padding: 0;
+  padding-top: 22px;
+}
+
+.main-nav__item--search,
+.main-nav__item--cart {
+  position: relative;
+}
+
+.main-nav__item--new,
+.main-nav__item--sale,
+.main-nav__item--delivery {
+  display: none;
 }
 
 .main-nav__logo-link {
@@ -33,24 +61,209 @@
   height: 20px;
 }
 
-.main-nav__list {
-  display: block;
-  @include zero-indent;
-
-  list-style: none;
-}
-
-.main-nav__item {
-  display: block;
-  min-height: 79px;
-  margin: 0;
-  padding-left: 76px;
-  padding-top: 25px;
-  padding-bottom: 30px;
-
-  border-bottom: 1px solid $light-gray;
-}
-
 .main-nav__link {
   color: inherit;
+}
+
+.main-nav__button {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+
+  display: block;
+  width: 22px;
+  height: 18px;
+  @include zero-indent;
+
+  background-color: $transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: $tablet-width;
+  }
+
+  .main-nav__list {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-color: $transparent;
+  }
+
+  .main-nav__item {
+    min-height: 90px;
+    @include zero-indent;
+    padding-top: 22px;
+
+    font-size: 15px;
+
+    border-bottom: 1px solid $light-gray;
+  }
+
+  .main-nav__item--logo {
+    background-color: $white;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__button {
+    top: 35px;
+    left: 35px;
+  }
+
+  .main-nav__button--cart {
+    left: 33px;
+  }
+
+  .main-nav__item--cart {
+    width: 265px;
+    padding-top: 35px;
+
+    font-size: 17px;
+    text-align: right;
+
+    background-color: $white;
+}
+
+  .main-nav__item--catalog {
+    width: 167px;
+    order: 4;
+
+    background-color: $transparent;
+    border: none;
+}
+
+  .main-nav__item--form {
+    width: 167px;
+    order: 5;
+
+    background-color: $transparent;
+    border: none;
+  }
+
+  .main-nav__item--search {
+    width: 81px;
+
+    background-color: $white;
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+  }
+
+  .main-nav__link--search {
+    visibility: hidden;
+  }
+
+  .main-nav__item--delivery {
+    display: block;
+    width: 265px;
+    order: 6;
+    margin-left: auto;
+
+    font-weight: 400;
+    text-align: right;
+
+    background-color: $transparent;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: $desktop-width;
+  }
+
+  .main-nav__list {
+    padding: 0;
+  }
+
+  .main-nav__item {
+    min-height: 90px;
+    @include zero-indent;
+
+    border-bottom: 1px solid $menu-bottom;
+  }
+
+  .main-nav__item--catalog {
+    order: 1;
+    width: 235px;
+    padding-left: 50px;
+    padding-top: 35px;
+
+    font-size: 17px;
+
+    background-color: $white;
+    border-right: 1px solid $light-gray;
+  }
+
+  .main-nav__item--form {
+    order: 2;
+    width: 235px;
+    padding-left: 35px;
+    padding-top: 35px;
+
+    font-size: 17px;
+
+    background-color: $white;
+  }
+
+  .main-nav__item--logo {
+    order: 3;
+    width: 280px;
+    padding-left: 30px;
+    padding-top: 9px;
+  }
+
+  .main-nav__logo-link {
+    margin: 0;
+  }
+
+  .main-nav__item--search {
+    order: 4;
+    width: 83px;
+  }
+
+  .main-nav__item--cart {
+    order: 5;
+    width: 315px;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 35px;
+
+    font-size: 17px;
+  }
+
+  .main-nav__item--new {
+    order: 6;
+    display: block;
+    width: 235px;
+    padding-left: 50px;
+    padding-top: 22px;
+
+    border: none;
+  }
+
+  .main-nav__item--sale {
+    order: 7;
+    display: block;
+    width: 235px;
+    padding-left: 35px;
+    padding-top: 22px;
+
+    border: none;
+  }
+
+  .main-nav__item--delivery {
+    order: 8;
+    width: 315px;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-top: 22px;
+
+    border: none;
+  }
 }

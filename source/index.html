@@ -9,13 +9,13 @@
   <body class="page-container">
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__logo-link" href="#">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
-          </a>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">x</button>
-        </div>
         <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo-link" href="#">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">x</button>
+          </li>
           <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link main-nav__link--catalog" href="catalog.html" title="Переход на страницу каталога">Каталог товаров</a>
           </li>
@@ -23,10 +23,25 @@
             <a class="main-nav__link main-nav__link--form" href="form.html" title="Переход на страницу формы заказа">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__button main-nav__button--search" href="search.html" title="Переход на страницу поиска товаров на сайте">
+              <img class="main-nav__image" src="img/icon-search.svg" width="18" height="18" alt="Иконка поиска товаров">
+            </a>
             <a class="main-nav__link main-nav__link--search" href="search.html" title="Переход на страницу поиска товаров на сайте">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
+            <button class="main-nav__button main-nav__button--cart" type="button" aria-label="Кнопка перехода в корзину">
+              <img class="main-nav__image" src="img/icon-cart.svg" width="21" height="18" alt="Иконка корзины">
+            </button>
             <a class="main-nav__link main-nav__link--cart" href="cart.html" title="Переход в корзину выбранных товаров и заказов">Корзина: <span>пока пуста</span></a>
+          </li>
+          <li class="main-nav__item main-nav__item--new">
+            <a class="main-nav__link main-nav__link--new" href="catalog-new.html" title="Переход на страницу новых поступлений">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--sale" href="catalog-sale.html" title="Переход на страницу распродажи">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
+            Бесплатная доставка по России
           </li>
         </ul>
       </nav>
@@ -49,45 +64,47 @@
       <section class="best-seller">
         <h2 class="best-seller__title">Вязаные корзинки</h2>
         <b class="best-seller__remark">Товар недели</b>
-        <p class="best-seller__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
-        </p>
-        <table class="best-seller__details">
-          <tr>
-            <td class="best-seller__property">
-              Цвет:
-            </td>
-            <td class="best-seller__value">
-              &#171;Тиффани&#187;/серый
-            </td>
-          </tr>
-          <tr>
-            <td class="best-seller__property">
-              Диаметр:
-            </td>
-            <td class="best-seller__value">
-              25см
-            </td>
-          </tr>
-          <tr>
-            <td class="best-seller__property">
-              Высота:
-            </td>
-            <td class="best-seller__value">
-              15см
-            </td>
-          </tr>
-        </table>
-        <p class="best-seller__image-wrapper">
-          <img class="best-seller__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Иллюстрация набора корзинок">
-        </p>
-        <div class="best-seller__price-wrapper">
-          <p class="best-seller__price">
-            Цена: 990 руб.
+        <div class="best-seller__inner">
+          <p class="best-seller__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
           </p>
-          <a class="best-seller__button button" href="form.html" title="Переход в форму заказа">
-            Заказать
-          </a>
+          <table class="best-seller__details">
+            <tr>
+              <td class="best-seller__property">
+                Цвет:
+              </td>
+              <td class="best-seller__value">
+                &#171;Тиффани&#187;/серый
+              </td>
+            </tr>
+            <tr>
+              <td class="best-seller__property">
+                Диаметр:
+              </td>
+              <td class="best-seller__value">
+                25см
+              </td>
+            </tr>
+            <tr>
+              <td class="best-seller__property">
+                Высота:
+              </td>
+              <td class="best-seller__value">
+                15см
+              </td>
+            </tr>
+          </table>
+          <p class="best-seller__image-wrapper">
+            <img class="best-seller__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Иллюстрация набора корзинок">
+          </p>
+          <div class="best-seller__price-wrapper">
+            <p class="best-seller__price">
+              Цена: 990 руб.
+            </p>
+            <a class="best-seller__button button" href="form.html" title="Переход в форму заказа">
+              Заказать
+            </a>
+          </div>
         </div>
       </section>
       <section class="advantages">
