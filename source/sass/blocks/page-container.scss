@@ -11,8 +11,21 @@
 
 @media (min-width: $tablet-width) {
   .page-container {
+    width: $tablet-width;
+    margin: 0 auto;
+
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 90px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .page-container {
+        width: $desktop-width;
+
+        background-image: url("../img/hero-tablet@1x.jpg"), linear-gradient($white 90px, $bgmenu-gray 90px, $bgmenu-gray 835px, $white 835px);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center 90px, 0 0;
+      }
 }

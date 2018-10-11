@@ -64,3 +64,123 @@
   background-image: url("../img/icon-feature-gift.svg");
   background-position: 9px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: $tablet-width;
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 75px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: top;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: $tablet-container;
+
+    font-size: 20px;
+    line-height: 22px;
+    list-style: none;
+  }
+
+  .advantages__item {
+    display: block;
+    width: 325px;
+    min-height: 110px;
+  }
+
+  .advantages__item--material {
+    order: 1;
+    padding-right: 110px;
+  }
+
+  .advantages__item--style {
+    order: 3;
+    padding-right: 80px;
+  }
+
+  .advantages__item--social {
+    order: 5;
+    padding-right: 100px;
+  }
+
+  .advantages__item--handmade {
+    order: 2;
+    padding-right: 60px;
+  }
+
+  .advantages__item--patriotic {
+    order: 4;
+  }
+
+  .advantages__item--packaging {
+    order: 6;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: $desktop-container;
+    padding-top: 90px;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 85px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: top;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__list {
+    width: 700px;
+  }
+
+  .advantages__item--material {
+    width: 340px;
+    padding-right: 110px;
+  }
+
+  .advantages__item--style {
+    width: 340px;
+    padding-right: 80px;
+  }
+
+  .advantages__item--social {
+    width: 340px;
+    padding-right: 100px;
+  }
+
+  .advantages__item--handmade {
+    width: 360px;
+    padding-right: 60px;
+  }
+
+  .advantages__item--patriotic {
+    width: 360px;
+  }
+
+  .advantages__item--packaging {
+    width: 360px;
+    padding-right: 70px;
+  }
+}

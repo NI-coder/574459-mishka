@@ -17,6 +17,7 @@
 
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: $green;
 }
@@ -139,9 +140,81 @@
     width: 292px;
     margin: 0;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .best-seller {
+    position: relative;
 
+    justify-content: flex-start;
+    width: $desktop-width;
+    padding: 70px 50px;
+  }
 
+  .best-seller__title {
+    position: absolute;
+    content: "";
+    top: 130px;
+    left: 225px;
 
+    width: 550px;
 
+    font-size: 53px;
+    line-height: 57px;
+
+    z-index: 1;
+  }
+
+  .best-seller__remark {
+    order: 1;
+    width: 175px;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .best-seller__inner {
+    position: relative;
+    width: 290px;
+    order: 2;
+    padding-top: 160px;
+  }
+
+  .best-seller__value {
+    width: 190px;
+  }
+
+  .best-seller__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-seller__image-wrapper {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 334px;
+
+    width: 333px;
+    height: 404px;
+
+    z-index: 0;
+  }
+
+  .best-seller__details {
+    margin-bottom: 60px;
+  }
+
+  .best-seller__price {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+
+  .best-seller__button {
+    width: 292px;
+    margin: 0;
+  }
 }

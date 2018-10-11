@@ -35,5 +35,17 @@
     line-height: 50px;
     color: $black;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: $desktop-width;
+  }
+
+  .page-main__main-title {
+    margin-bottom: 352px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

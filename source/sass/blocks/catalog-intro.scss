@@ -120,3 +120,25 @@
     background-position: 240px 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-intro__nav {
+    width: $desktop-width;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .catalog-intro__list {
+    width: $desktop-container;
+  }
+
+  .catalog-intro__link--interior {
+    background-position: 450px 30px;
+  }
+
+  .catalog-intro__link--toys {
+    background-position: 430px 30px;
+  }
+}
