@@ -21,6 +21,7 @@
 
 .advantages__list {
   width: $mobile-container;
+
   @include zero-indent;
 
   line-height: 20px;
@@ -73,7 +74,6 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 75px;
-    margin: 0;
 
     background-image: url("../img/bg-zigzag-line.svg");
   }

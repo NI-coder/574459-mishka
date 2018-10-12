@@ -1,6 +1,7 @@
 .button {
   display: block;
   height: $cell-height;
+
   @include zero-indent;
 
   font-size: 17px;

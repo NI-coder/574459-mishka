@@ -6,6 +6,7 @@
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
+
   @include zero-indent;
 
   list-style: none;
@@ -73,6 +74,7 @@
   display: block;
   width: 22px;
   height: 18px;
+
   @include zero-indent;
 
   background-color: $transparent;
@@ -95,6 +97,7 @@
 
   .main-nav__item {
     min-height: 90px;
+
     @include zero-indent;
     padding-top: 22px;
 
@@ -128,7 +131,7 @@
     text-align: right;
 
     background-color: $white;
-}
+  }
 
   .main-nav__item--catalog {
     width: 167px;
@@ -136,7 +139,7 @@
 
     background-color: $transparent;
     border: none;
-}
+  }
 
   .main-nav__item--form {
     width: 167px;
@@ -183,6 +186,7 @@
 
   .main-nav__item {
     min-height: 90px;
+
     @include zero-indent;
 
     border-bottom: 1px solid $menu-bottom;

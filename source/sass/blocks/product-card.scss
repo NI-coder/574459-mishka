@@ -1,6 +1,7 @@
 .product-card {
   display: flex;
   flex-wrap: wrap;
+
   @include zero-indent;
   margin-bottom: 30px;
 
@@ -15,6 +16,7 @@
 
 .product-card__link--image {
   display: block;
+
   @include zero-indent;
 
   line-height: 0;
@@ -27,6 +29,7 @@
 .product-card__image {
   width: $mobile-container;
   height: 195px;
+
   @include zero-indent;
 
   line-height: 0;
@@ -76,11 +79,13 @@
 
 .product-card__price {
   width: 170px;
+
   @include zero-indent;
 }
 
 .product-card__button-wrapper {
   width: 20px;
+
   @include zero-indent;
   margin-left: auto;
 }

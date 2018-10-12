@@ -37,11 +37,13 @@
 
 .contacts__item {
   width: 77px;
+
   @include zero-indent;
 }
 
 .contacts__text {
   flex-grow: 1;
+
   @include zero-indent;
 }
 
@@ -83,7 +85,9 @@
 
   .contacts__inner {
     width: 334px;
+
     @include zero-indent;
+
     margin-bottom: 60px;
 
     font-size: 17px;
@@ -114,7 +118,9 @@
   .contacts__title {
     position: relative;
     width: 300px;
+
     @include zero-indent;
+
     margin-right: auto;
     margin-bottom: 55px;
 

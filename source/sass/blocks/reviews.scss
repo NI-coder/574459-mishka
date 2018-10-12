@@ -26,6 +26,7 @@
 
 .reviews__author {
   display: block;
+
   @include zero-indent;
   margin-bottom: 35px;
 
@@ -52,6 +53,7 @@
   display: block;
   width: 128px;
   height: $cell-height;
+
   @include zero-indent;
 
   background-color: $transparent;

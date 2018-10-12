@@ -1,5 +1,6 @@
 .page-container {
   min-width: $mobile-width;
+
   @include zero-indent;
 
   font-family: "Open Sans", "Arial", sans-serif;
