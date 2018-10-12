@@ -7,7 +7,7 @@
 
   background-image: url("../img/bg-zigzag-line-mini.svg");
   background-repeat: repeat-x;
-  background-position: top;
+  background-position: top center;
 }
 
 .advantages__title {
@@ -68,14 +68,14 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: $tablet-width;
+    margin: 0 auto;
     padding-top: 70px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 75px;
+    margin: 0;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: top;
   }
 
   .advantages__title {
@@ -99,6 +99,7 @@
     display: block;
     width: 325px;
     min-height: 110px;
+    margin: 0;
   }
 
   .advantages__item--material {
@@ -134,14 +135,13 @@
 @media (min-width: $desktop-width) {
   .advantages {
     width: $desktop-container;
+    margin: 0 auto;
     padding-top: 90px;
     padding-left: 175px;
     padding-right: 175px;
     padding-bottom: 85px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: top;
   }
 
   .advantages__title {

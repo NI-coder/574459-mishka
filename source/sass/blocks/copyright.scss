@@ -23,3 +23,10 @@
 .copyright__link-image {
   line-height: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+    width: 200px;
+  }
+}

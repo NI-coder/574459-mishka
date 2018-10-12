@@ -6,6 +6,8 @@
   padding-right: 30px;
   padding-bottom: 45px;
   padding-left: 30px;
+
+  border-top: 1px solid rgb(199, 199, 199);
 }
 
 .modal-form__title {
@@ -42,6 +44,11 @@
 .modal-form__sizes-item {
   width: 82px;
   height: $cell-height;
+  padding-top: 18px;
+
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
 
   border: 2px solid $light-gray;
 }
@@ -59,4 +66,38 @@
 
   border: none;
   background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-form {
+    width: 566px;
+    padding: 45px 100px;
+
+    border: 1px solid rgb(199, 199, 199);
+  }
+
+  .modal-form__title {
+    width: auto;
+    @include zero-indent;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 57px;
+    text-align: center;
+  }
+
+  .modal-form__sizes-list {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+  }
+
+  .modal-form__sizes-item {
+    width: 112px;
+  }
+
+  .modal-form__button {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
