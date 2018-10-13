@@ -13,26 +13,33 @@
 }
 
 .contacts__title {
-  width: $mobile-container;
-  padding: 0;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  width: $mobile-width;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 
   font-size: 18px;
   line-height: 30px;
+  text-align: left;
+}
+
+.contacts__wrapper {
+  padding: 40px 30px;
 }
 
 .contacts__inner {
   display: flex;
-  width: $mobile-container;
   padding: 0;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: $text-color;
+}
+
+.contacts__inner:last-child {
+  margin-bottom: 0;
 }
 
 .contacts__item {
@@ -73,22 +80,30 @@
 
   .contacts__title {
     position: relative;
-    width: $tablet-container;
-    padding: 0;
-    padding-right: 100px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    width: $tablet-width;
+
+    @include zero-indent;
+    padding-left: 50px;
+    padding-right: 200px;
+    margin-bottom: 35px;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    width: $tablet-width;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
   }
 
   .contacts__inner {
     width: 334px;
 
     @include zero-indent;
-
-    margin-bottom: 60px;
 
     font-size: 17px;
   }
@@ -109,29 +124,33 @@
     position: relative;
     width: $desktop-container;
     min-height: 655px;
-    padding-top: 95px;
+    padding-top: 170px;
     padding-right: 525px;
     padding-bottom: 105px;
-    padding-left: 175px;
   }
 
   .contacts__title {
     position: relative;
-    width: 300px;
+    width: 525px;
 
     @include zero-indent;
-
-    margin-right: auto;
-    margin-bottom: 55px;
+    padding-left: 175px;
+    margin-bottom: 20px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
+  .contacts__wrapper {
+    display: block;
+    width: 525px;
+    padding: 35px;
+    padding-left: 175px;
+  }
+
   .contacts__inner {
-    width: 300px;
-    margin-right: auto;
-    margin-bottom: 0;
+    width: auto;
+    margin-bottom: 30px;
   }
 
   .contacts__map {
@@ -145,8 +164,9 @@
   }
 
   .contacts__button {
-    margin: 0;
     margin-top: auto;
+    margin-left: 175px;
     margin-right: auto;
+    margin-bottom: 0;
   }
 }

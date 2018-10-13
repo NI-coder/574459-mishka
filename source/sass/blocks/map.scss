@@ -2,6 +2,10 @@
   width: $mobile-width;
   height: 457px;
 
+  @include zero-indent;
+
+  line-height: 0;
+
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;

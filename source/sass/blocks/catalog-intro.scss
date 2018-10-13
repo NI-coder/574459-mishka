@@ -77,28 +77,19 @@
   width: 120px;
 }
 
-@media (min-width: $tablet-width) {
-  .catalog-intro__nav {
-    position: relative;
+.catalog-intro__deco {
+  display: none;
+}
 
+@media (min-width: $tablet-width) {
+  .catalog-intro {
+    position: relative;
+  }
+
+  .catalog-intro__nav {
     width: $tablet-width;
 
     @include zero-indent;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: -191px;
-      bottom: 0;
-
-      display: block;
-      width: 1150px;
-      height: 20px;
-
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: 0 0;
-    }
   }
 
   .catalog-intro__list {
@@ -126,16 +117,26 @@
   .catalog-intro__link--toys {
     background-position: 240px 30px;
   }
+
+  .catalog-intro__deco {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: $tablet-width;
+    height: 34px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-intro__nav {
     width: $desktop-width;
-
-    &::before {
-      left: 0;
     }
-  }
 
   .catalog-intro__list {
     width: $desktop-container;
@@ -147,5 +148,10 @@
 
   .catalog-intro__link--toys {
     background-position: 430px 30px;
+  }
+
+  .catalog-intro__deco {
+    left: -50px;
+    width: 1250px;
   }
 }

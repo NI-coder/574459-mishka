@@ -106,10 +106,6 @@
     border-bottom: 1px solid $light-gray;
   }
 
-  .main-nav__item--logo {
-    background-color: $white;
-  }
-
   .main-nav__toggle {
     display: none;
   }
@@ -129,15 +125,12 @@
 
     font-size: 17px;
     text-align: right;
-
-    background-color: $white;
   }
 
   .main-nav__item--catalog {
     width: 167px;
     order: 4;
 
-    background-color: $transparent;
     border: none;
   }
 
@@ -145,7 +138,6 @@
     width: 167px;
     order: 5;
 
-    background-color: $transparent;
     border: none;
   }
 
@@ -170,7 +162,6 @@
     font-weight: 400;
     text-align: right;
 
-    background-color: $transparent;
     border: none;
   }
 }
@@ -200,7 +191,6 @@
 
     font-size: 17px;
 
-    background-color: $white;
     border-right: 1px solid $light-gray;
   }
 
@@ -211,8 +201,6 @@
     padding-top: 35px;
 
     font-size: 17px;
-
-    background-color: $white;
   }
 
   .main-nav__item--logo {
