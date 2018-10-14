@@ -84,7 +84,7 @@
     width: $tablet-width;
     padding: 50px;
     padding-top: 80px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -110,6 +110,7 @@
     order: 3;
     width: 300px;
     margin: 0;
+    margin-bottom: 50px;
 
     font-size: 18px;
   }

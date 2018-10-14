@@ -136,7 +136,8 @@
 @media (min-width: $desktop-width) {
   .catalog-intro__nav {
     width: $desktop-width;
-    }
+    margin: 0 auto;
+  }
 
   .catalog-intro__list {
     width: $desktop-container;
@@ -151,7 +152,7 @@
   }
 
   .catalog-intro__deco {
-    left: -50px;
+    left: 0;
     width: 1250px;
   }
 }

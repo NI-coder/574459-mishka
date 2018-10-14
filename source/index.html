@@ -6,8 +6,8 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <div class="page-container">
+  <body class="page-container">
+    <div class="page-container__index">
       <header class="page-header">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
@@ -64,123 +64,125 @@
           <div class="catalog-intro__deco">
           </div>
         </section>
-        <section class="best-seller">
-          <h2 class="best-seller__title">Вязаные корзинки</h2>
-          <b class="best-seller__remark">Товар недели</b>
-          <div class="best-seller__inner">
-            <p class="best-seller__description">
-              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
+        <div class="white-background">
+          <section class="best-seller">
+            <h2 class="best-seller__title">Вязаные корзинки</h2>
+            <b class="best-seller__remark">Товар недели</b>
+            <div class="best-seller__inner">
+              <p class="best-seller__description">
+                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
+              </p>
+              <table class="best-seller__details">
+                <tr>
+                  <td class="best-seller__property">
+                    Цвет:
+                  </td>
+                  <td class="best-seller__value">
+                    &#171;Тиффани&#187;/серый
+                  </td>
+                </tr>
+                <tr>
+                  <td class="best-seller__property">
+                    Диаметр:
+                  </td>
+                  <td class="best-seller__value">
+                    25см
+                  </td>
+                </tr>
+                <tr>
+                  <td class="best-seller__property">
+                    Высота:
+                  </td>
+                  <td class="best-seller__value">
+                    15см
+                  </td>
+                </tr>
+              </table>
+              <p class="best-seller__image-wrapper">
+                <img class="best-seller__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Иллюстрация набора корзинок">
+              </p>
+              <div class="best-seller__price-wrapper">
+                <p class="best-seller__price">
+                Цена: 990 руб.
+                </p>
+                <a class="best-seller__button button" href="form.html" title="Переход в форму заказа">
+                  Заказать
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="advantages">
+            <h2 class="advantages__title">Коротко о нас:</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--material">
+                Экологически чистые материалы
+              </li>
+              <li class="advantages__item advantages__item--style">
+                Скандинавский стиль по российской цене
+              </li>
+              <li class="advantages__item advantages__item--social">
+                Увеличивает лайки на фотографиях
+              </li>
+              <li class="advantages__item advantages__item--handmade">
+                Связано вручную с любовью и умилением
+              </li>
+              <li class="advantages__item advantages__item--patriotic">
+                Поддержка отечественного производителя
+              </li>
+              <li class="advantages__item advantages__item--packaging">
+                Поставляется в подарочной упаковке
+              </li>
+            </ul>
+          </section>
+          <section class="reviews">
+            <h2 class="reviews__title">Отзывы</h2>
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <table class="best-seller__details">
-              <tr>
-                <td class="best-seller__property">
-                  Цвет:
-                </td>
-                <td class="best-seller__value">
-                  &#171;Тиффани&#187;/серый
-                </td>
-              </tr>
-              <tr>
-                <td class="best-seller__property">
-                  Диаметр:
-                </td>
-                <td class="best-seller__value">
-                  25см
-                </td>
-              </tr>
-              <tr>
-                <td class="best-seller__property">
-                  Высота:
-                </td>
-                <td class="best-seller__value">
-                  15см
-                </td>
-              </tr>
-            </table>
-            <p class="best-seller__image-wrapper">
-              <img class="best-seller__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Иллюстрация набора корзинок">
+            <cite class="reviews__author">Анастасия Красильникова <span class="reviews__author-twitter">@misssssiskras</span></cite>
+            <div class="reviews__toggles">
+              <button class="reviews__toggle reviews__toggle--prev" type="button">Назад</button>
+              <button class="reviews__toggle reviews__toggle--next" type="button">Вперёд</button>
+            </div>
+            <a class="reviews__button button" href="reviews-small.html" title="Переход в форму написания отзыва">
+              Написать
+            </a>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__wrapper">
+              <div class="contacts__inner">
+                <p class="contacts__item">
+                  e-mail:
+                </p>
+                <p class="contacts__text">
+                  info@mimimishkashop.ru
+                </p>
+              </div>
+              <div class="contacts__inner">
+                <p class="contacts__item">
+                  адрес:
+                </p>
+                <p class="contacts__text">
+                  г.Санкт-Петербург,<br>
+                  ул. Большая Конюшенная,<br>
+                  д. 19/8, офис 101
+                </p>
+              </div>
+            </div>
+            <p class="contacts__map map">
+              Карта
             </p>
-            <div class="best-seller__price-wrapper">
-              <p class="best-seller__price">
-              Цена: 990 руб.
-              </p>
-              <a class="best-seller__button button" href="form.html" title="Переход в форму заказа">
-                Заказать
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="advantages">
-          <h2 class="advantages__title">Коротко о нас:</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--material">
-              Экологически чистые материалы
-            </li>
-            <li class="advantages__item advantages__item--style">
-              Скандинавский стиль по российской цене
-            </li>
-            <li class="advantages__item advantages__item--social">
-              Увеличивает лайки на фотографиях
-            </li>
-            <li class="advantages__item advantages__item--handmade">
-              Связано вручную с любовью и умилением
-            </li>
-            <li class="advantages__item advantages__item--patriotic">
-              Поддержка отечественного производителя
-            </li>
-            <li class="advantages__item advantages__item--packaging">
-              Поставляется в подарочной упаковке
-            </li>
-          </ul>
-        </section>
-        <section class="reviews">
-          <h2 class="reviews__title">Отзывы</h2>
-          <p class="reviews__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <cite class="reviews__author">Анастасия Красильникова <span class="reviews__author-twitter">@misssssiskras</span></cite>
-          <div class="reviews__toggles">
-            <button class="reviews__toggle reviews__toggle--prev" type="button">Назад</button>
-            <button class="reviews__toggle reviews__toggle--next" type="button">Вперёд</button>
-          </div>
-          <a class="reviews__button button" href="reviews-small.html" title="Переход в форму написания отзыва">
-            Написать
-          </a>
-        </section>
-        <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__wrapper">
-            <div class="contacts__inner">
-              <p class="contacts__item">
-                e-mail:
-              </p>
-              <p class="contacts__text">
-                info@mimimishkashop.ru
-              </p>
-            </div>
-            <div class="contacts__inner">
-              <p class="contacts__item">
-                адрес:
-              </p>
-              <p class="contacts__text">
-                г.Санкт-Петербург,<br>
-                ул. Большая Конюшенная,<br>
-                д. 19/8, офис 101
-              </p>
-            </div>
-          </div>
-          <p class="contacts__map map">
-            Карта
-          </p>
-          <a class="contacts__button button" href="contacts-small.html" title="Переход в форму обратной связи">
-            Напишите нам
-          </a>
-        </section>
+            <a class="contacts__button button" href="contacts-small.html" title="Переход в форму обратной связи">
+              Напишите нам
+            </a>
+          </section>
+        </div>
       </main>
       <footer class="page-footer">
         <div class="page-footer_container">
           <p class="page-footer__logo">
-            <a class="page-footer__logo-link" href="index.html" title="Переход на главную страницу">
+            <a class="page-footer__logo-link" href="#" title="Переход на главную страницу">
               <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина «Мишка»">
             </a>
           </p>

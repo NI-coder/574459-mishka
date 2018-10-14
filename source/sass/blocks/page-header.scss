@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-image: url("../img/hero-tablet@1x.jpg"),  linear-gradient($white 90px, $bgmenu-gray 90px);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 90px, 0 0;
+  }
+}
