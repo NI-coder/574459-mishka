@@ -8,7 +8,7 @@
   color: $black;
 }
 
-.page-container__index {
+.page-container__index-wrapper {
   min-width: $mobile-width;
   margin: 0 auto;
 }
@@ -18,7 +18,11 @@
     background-color: $bgmenu-gray;
   }
 
-  .page-container__index {
+  .page-container--catalog {
+    background-color: $bg-gray;
+  }
+
+  .page-container__index-wrapper {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 90px;

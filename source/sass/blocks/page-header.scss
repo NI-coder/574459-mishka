@@ -4,4 +4,10 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center 90px, 0 0;
   }
+
+  .page-header--catalog {
+    background-image: linear-gradient($white 90px, $bg-gray 90px);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
