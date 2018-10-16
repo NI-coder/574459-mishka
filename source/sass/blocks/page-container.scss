@@ -15,11 +15,11 @@
 
 @media (min-width: $tablet-width) {
   .page-container {
-    background-color: $bgmenu-gray;
+    background-color: $bg-gray;
   }
 
-  .page-container--catalog {
-    background-color: $bg-gray;
+  .page-container--index {
+    background-color: $bgmenu-gray;
   }
 
   .page-container__index-wrapper {
