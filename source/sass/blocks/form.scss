@@ -1,37 +1,35 @@
 .form {
-  width: 320px;
+  width: $mobile-width;
 }
 
 .form__item {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include zero-indent;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 10px;
 }
 
-.form__item--colour,
-.form__label--single {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .form__title {
   display: block;
   width: 100%;
-  margin: 0;
-  padding: 0;
+
+  @include zero-indent;
   margin-bottom: 25px;
 
   font-size: 17px;
-  line-height: 18px;
+  line-height: 16px;
   text-transform: uppercase;
-  color: rgb(99, 209, 187);
+  color: $green;
 }
 
 .form__inner {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include zero-indent;
 
   line-height: 18px;
 }
@@ -42,10 +40,6 @@
   margin-bottom: 21px;
 }
 
-.form__inner--colour {
-  min-width: 260px;
-}
-
 .form__inner--name {
   display: flex;
   flex-wrap: wrap;
@@ -53,49 +47,43 @@
 
 .form__label--text {
   display: block;
-  margin: 0;
+  width: 101px;
+
+  @include zero-indent;
   margin-right: 25px;
-  padding: 0;
 }
 
 .form__label--text-name {
   width: 48px;
 }
 
-.form__label--text-surname {
-  width: 101px;
-}
-
-.form__label--text-patronymic {
-  width: 101px;
-}
-
 .form__input--text {
   display: block;
   width: 100%;
-  min-height: 52px;
+  min-height: $cell-height;
   margin-bottom: 24px;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  color: rgba(68, 68, 68, 0.3);
+  color: $fade-text;
 
   border: none;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid $black;
 }
 
-.form__label--single {
+.form__label--contacts,
+.form__label--wishes {
   display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  width: $mobile-container;
+
+  @include zero-indent;
   margin-bottom: 5px;
 
   font-size: 17px;
-  line-height: 18px;
+  line-height: 16px;
   text-transform: uppercase;
-  color: rgb(99, 209, 187);
+  color: $green;
 }
 
 .form__textarea {
@@ -105,11 +93,16 @@
   margin: 0;
   padding: 15px;
   margin-bottom: 17px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: $fade-text;
+
+  border: 2px solid $text-color;
 }
 
 .form__note {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 30px;
@@ -117,15 +110,221 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }
 
 .form__button {
-  width: 260px;
+  width: $mobile-container;
   margin: 0 auto;
   margin-bottom: 55px;
 
   line-height: 16px;
   font-weight: 700;
-  color: rgb(68, 68, 68);
+  color: $text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .form__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+
+    &:nth-of-type(2n+1) {
+      background-color: $white;
+    }
+  }
+
+  .form__title {
+    display: block;
+    width: 167px;
+
+    @include zero-indent;
+  }
+
+  .form__wrapper {
+    width: 501px;
+  }
+
+  .form__wrapper--colour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__inner {
+    font-size: 19px;
+  }
+
+  .form__inner--type,
+  .form__inner--colour {
+    padding-left: 80px;
+  }
+
+  .form__inner--colour {
+    width: 240px;
+  }
+
+  .form__inner--name {
+    width: 501px;
+  }
+
+  .form__input--text {
+    width: 375px;
+
+    font-size: 19px;
+  }
+
+  .form__input--text-name {
+    width: 428px;
+  }
+
+  .form__label--text {
+    padding-top: 15px;
+  }
+
+  .form__item--contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__inner--contacts {
+    display: flex;
+  }
+
+  .form__label--contacts,
+  .form__label--wishes {
+    width: 167px;
+
+    @include zero-indent;
+    padding-top: 15px;
+  }
+
+  .form__input--text-contacts {
+    width: 501px;
+
+    background-color: $bg-gray;
+  }
+
+  .form_additional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+
+    background-color: $white;
+  }
+
+  .form__item--wishes {
+    display: flex;
+    order: 1;
+
+    @include zero-indent;
+  }
+
+  .form__textarea {
+    width: 501px;
+    padding: 15px;
+    margin: 0;
+    margin-bottom: 53px;
+
+    font-size: 19px;
+  }
+
+  .form__note {
+    order: 3;
+    padding-top: 15px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__button {
+    order: 2;
+    width: 230px;
+
+    @include zero-indent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: $desktop-width;
+  }
+
+  .form__item {
+    padding: 50px 225px 50px 110px;
+  }
+
+  .form__item--colour {
+    padding-right: 50px;
+  }
+
+  .form__title {
+    width: 115px;
+  }
+
+  .form__wrapper {
+    width: 700px;
+  }
+
+  .form__wrapper--colour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 800px;
+  }
+
+  .form__inner--colour {
+    width: 263px;
+  }
+
+  .form__inner--name {
+    width: 700px;
+  }
+
+  .form__input--text {
+    width: 573px;
+  }
+
+  .form__input--text-name {
+    width: 626px;
+  }
+
+  .form__label--contacts,
+  .form__label--wishes {
+    width: 115px;
+  }
+
+  .form__input--text-contacts {
+    width: 700px;
+  }
+
+  .form_additional {
+    padding-left: 110px;
+    padding-right: 225px;
+  }
+
+  .form__item--wishes {
+    @include zero-indent;
+  }
+
+  .form__textarea {
+    width: 700px;
+    margin-bottom: 49px;
+  }
+
+  .form__note {
+    @include zero-indent;
+    padding-top: 15px;
+  }
+
+  .form__button {
+    @include zero-indent;
+    margin-left: 115px;
+  }
 }

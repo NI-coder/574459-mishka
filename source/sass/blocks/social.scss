@@ -1,5 +1,5 @@
 .social {
-  width: 320px;
+  width: $mobile-width;
 }
 
 .social__list {
@@ -15,4 +15,14 @@
   padding: 0;
 
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 167px;
+  }
+
+  .social__list {
+    min-height: 143px;
+  }
 }

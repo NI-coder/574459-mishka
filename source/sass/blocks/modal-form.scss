@@ -1,11 +1,13 @@
 .modal-form {
-  width: 320px;
+  width: $mobile-width;
   min-height: 336px;
   margin: 0 auto;
   padding-top: 35px;
   padding-right: 30px;
   padding-bottom: 45px;
   padding-left: 30px;
+
+  border-top: 1px solid rgb(199, 199, 199);
 }
 
 .modal-form__title {
@@ -20,9 +22,8 @@
 }
 
 .modal-form__offer {
-  margin: 0;
+  @include zero-indent;
   margin-bottom: 25px;
-  padding: 0;
 
   font-size: 15px;
   line-height: 30px;
@@ -35,16 +36,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 260px;
-  height: 52px;
+  width: $mobile-container;
+  height: $cell-height;
   margin-bottom: 31px;
 }
 
 .modal-form__sizes-item {
   width: 82px;
-  height: 52px;
+  height: $cell-height;
+  padding-top: 18px;
 
-  border: 2px solid rgb(236, 236, 236);
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+
+  border: 2px solid $light-gray;
 }
 
 .modal-form__sizes-field {
@@ -52,12 +58,47 @@
 }
 
 .modal-form__button {
-  width: 260px;
+  width: $mobile-container;
 
   font-size: 17px;
   line-height: 16px;
-  color: rgb(255, 255, 255);
+  color: $white;
 
   border: none;
-  background-color: rgb(99, 209, 187);
+  background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-form {
+    width: 566px;
+    padding: 45px 100px;
+
+    border: 1px solid rgb(199, 199, 199);
+  }
+
+  .modal-form__title {
+    width: auto;
+
+    @include zero-indent;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 57px;
+    text-align: center;
+  }
+
+  .modal-form__sizes-list {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+  }
+
+  .modal-form__sizes-item {
+    width: 112px;
+  }
+
+  .modal-form__button {
+    width: 350px;
+    margin: 0 auto;
+  }
 }

@@ -1,12 +1,16 @@
 @import "normalize.scss";
 @import "global.scss";
 @import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/page-container.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/catalog-intro.scss";
+@import "blocks/white-background.scss";
 @import "blocks/best-seller.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
@@ -21,3 +25,4 @@
 @import "blocks/page-catalog.scss";
 @import "blocks/product-card.scss";
 @import "blocks/production-video.scss";
+@import "blocks/order-modal.scss";

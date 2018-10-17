@@ -1,17 +1,16 @@
 .production-video {
   display: flex;
   flex-wrap: wrap;
-  width: 260px;
+  width: $mobile-container;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 58px;
 
-  border: 1px solid rgb(237, 237, 237);
+  border: 1px solid $border-gray;
 }
 
 .production-video__title {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
   padding-top: 27px;
   padding-left: 90px;
   margin-bottom: 25px;
@@ -21,8 +20,7 @@
 }
 
 .production-video__video-wrapper {
-  margin: 0;
-  padding: 0;
+  @include zero-indent;
 
   line-height: 0;
 }
@@ -33,15 +31,105 @@
 
   font-size: 13px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: $text-color;
 }
 
-.page-catalog__button {
-  width: 192px;
-  padding-top: 15px;
-  margin: 0 auto;
-  margin-top: 29px;
-  margin-bottom: 33px;
+@media (min-width: $tablet-width) {
+  .production-video {
+    width: $tablet-width;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 63px;
+    margin: 0;
 
-  line-height: 16px;
+    border: none;
+  }
+
+  .production-video__title {
+    order: 2;
+    width: $tablet-container;
+    padding-top: 40px;
+    padding-left: 105px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+
+    border: 1px solid $light-gray;
+    border-bottom: none;
+  }
+
+  .production-video__video-wrapper {
+    order: 1;
+    width: $tablet-container;
+    height: 455px;
+  }
+
+  .production-video__video {
+    width: $tablet-container;
+    height: 455px;
+  }
+
+  .production-video__intro-wrapper {
+    order: 3;
+
+    @include zero-indent;
+    padding-bottom: 45px;
+
+    border: 1px solid $light-gray;
+    border-top: none;
+  }
+
+  .production-video__intro {
+    padding: 40px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production-video {
+    width: $desktop-width;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 105px;
+  }
+
+  .production-video__main-wrapper {
+    position: relative;
+
+    width: $desktop-container;
+    padding-left: 682px;
+  }
+
+  .production-video__title {
+    width: 367px;
+    padding-top: 100px;
+    padding-left: 79px;
+    padding-right: 130px;
+  }
+
+  .production-video__video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 682px;
+  }
+
+  .production-video__video {
+    width: 682px;
+  }
+
+  .production-video__intro-wrapper {
+    padding-top: 40px;
+    padding-left: 78px;
+    padding-right: 57px;
+    padding-bottom: 60px;
+  }
+
+  .production-video__intro {
+    @include zero-indent;
+    margin-bottom: 50px;
+  }
 }
