@@ -53,7 +53,7 @@
 
   border: 1px solid $light-gray;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -142,7 +142,7 @@
 
     border: none;
 
-    &:before {
+    &::before {
       display: none;
     }
   }
