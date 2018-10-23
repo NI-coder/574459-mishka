@@ -44,11 +44,16 @@
     display: block;
     width: 102px;
     height: 34px;
+
+    &--active {
+      cursor: default;
+    }
   }
 
   .page-footer__social-wrapper {
     width: 167px;
     margin: 0;
+    padding-right: 4px;
 
     border: none;
   }
@@ -59,6 +64,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .page-footer_container {
     width: $desktop-width;
     margin: 0 auto;
@@ -81,5 +91,6 @@
 
   .page-footer__social-wrapper {
     width: 348px;
+    padding-right: 0;
   }
 }

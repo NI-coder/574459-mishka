@@ -1,7 +1,6 @@
 .catalog-intro__nav {
   width: $mobile-width;
   margin: 0 auto;
-  margin-bottom: 34px;
 }
 
 .catalog-intro__list {
@@ -24,7 +23,7 @@
   display: block;
   min-height: 103px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 30px;
 
   font-size: 19px;
@@ -35,6 +34,10 @@
 }
 
 .catalog-intro__link--interior {
+  position: relative;
+
+  padding-right: 80px;
+
   background-color: $green;
   background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
@@ -43,6 +46,7 @@
   &:hover,
   &:focus {
     background-color: $green-hover;
+    background-image: url("../img/icon-interior-hover.svg");
   }
 
   &:active {
@@ -57,11 +61,12 @@
   background-color: $fade-green;
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
-  background-position: 240px 23px;
+  background-position: 235px 20px;
 
   &:hover,
   &:focus {
     background-color: $fade-green-hover;
+    background-image: url("../img/icon-toy-hover.svg");
   }
 
   &:active {
@@ -84,6 +89,23 @@
 @media (min-width: $tablet-width) {
   .catalog-intro {
     position: relative;
+    width: $tablet-width;
+    margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 23px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center top;
+      background-size: $tablet-width;
+    }
   }
 
   .catalog-intro__nav {
@@ -102,8 +124,8 @@
   }
 
   .catalog-intro__link {
-    min-height: 120px;
-    padding-top: 33px;
+    min-height: 128px;
+    padding-top: 27px;
     padding-left: 35px;
 
     font-size: 20px;
@@ -117,42 +139,40 @@
   .catalog-intro__link--toys {
     background-position: 240px 30px;
   }
-
-  .catalog-intro__deco {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-    width: $tablet-width;
-    height: 34px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: 0 bottom;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-intro {
+    width: $desktop-width;
+
+    &::after {
+      bottom: 0;
+
+      height: 35px;
+
+      background-size: 1250px 37px;
+    }
+  }
+
   .catalog-intro__nav {
     width: $desktop-width;
-    margin: 0 auto;
   }
 
   .catalog-intro__list {
     width: $desktop-container;
+    min-height: 135px;
+  }
+
+  .catalog-intro__link {
+    padding-top: 28px;
+    padding-left: 36px;
   }
 
   .catalog-intro__link--interior {
-    background-position: 450px 30px;
+    background-position: 449px 30px;
   }
 
   .catalog-intro__link--toys {
-    background-position: 430px 30px;
-  }
-
-  .catalog-intro__deco {
-    left: 0;
-    width: 1250px;
+    background-position: 430px 31px;
   }
 }

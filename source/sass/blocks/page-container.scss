@@ -25,6 +25,12 @@
   .page-container__index-wrapper {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 90px;
+    background-position: center 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-container__index-wrapper {
+    width: $desktop-width;
   }
 }

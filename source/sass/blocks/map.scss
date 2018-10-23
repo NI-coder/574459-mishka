@@ -12,12 +12,22 @@
   background-size: $mobile-width auto;
 }
 
+.map-iframe {
+  width: $mobile-width;
+  height: 457px;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     width: $tablet-width;
 
     background-image: url("../img/map-tablet@1x.jpg");
     background-size: $tablet-width auto;
+  }
+
+  .map-iframe {
+    width: $tablet-width;
+    height: 457px;
   }
 }
 
@@ -27,5 +37,9 @@
 
     background-image: url("../img/map-desktop@1x.jpg");
     background-size: 525px auto;
+  }
+
+  .map-iframe {
+    width: 525px;
   }
 }

@@ -1,13 +1,13 @@
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: $mobile-width;
   min-height: 80px;
 }
 
 .copyright__text {
   margin-right: 30px;
+  padding-top: 27px;
 
   font-size: 19px;
   line-height: 18px;
@@ -18,15 +18,27 @@
   display: block;
   width: 27px;
   height: 34px;
+  padding-top: 20px;
 }
 
-.copyright__link-image {
-  line-height: 0;
+.copyright__link svg {
+  fill: $green;
+  margin-left: -9px;
+  margin-top: -3px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     justify-content: flex-end;
+    align-items: center;
     width: 200px;
+  }
+
+  .copyright__text {
+    padding-top: 7px;
+  }
+
+  .copyright__link {
+    padding-top: 0;
   }
 }

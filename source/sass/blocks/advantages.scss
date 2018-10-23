@@ -1,19 +1,21 @@
 .advantages {
   width: $mobile-width;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 34px;
   padding-left: 25px;
-  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
 
-  background-image: url("../img/bg-zigzag-line-mini.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-position: top center;
+  background-position: -8px 0;
+  background-size: 325px;
 }
 
 .advantages__title {
   @include zero-indent;
   margin-bottom: 30px;
-  padding-left: 5px;
+  padding-left: 3px;
 
   font-size: 25px;
   line-height: 30px;
@@ -29,39 +31,56 @@
 }
 
 .advantages__item {
-  margin-bottom: 30px;
   padding-top: 55px;
   padding-left: 5px;
+  margin-bottom: 30px;
 
   background-repeat: no-repeat;
 }
 
 .advantages__item--material {
+  padding-right: 60px;
+
   background-image: url("../img/icon-feature-flower.svg");
-  background-position: 14px 0;
+  background-position: 14px 1px;
 }
 
 .advantages__item--style {
+  padding-right: 55px;
+
   background-image: url("../img/icon-feature-money.svg");
   background-position: 5px 0;
 }
 
 .advantages__item--social {
+  padding-top: 52px;
+  padding-right: 60px;
+
   background-image: url("../img/icon-feature-heart.svg");
-  background-position: 13px 0;
+  background-position: 13px 4px;
 }
 
 .advantages__item--handmade {
+  padding-top: 53px;
+  padding-left: 6px;
+
   background-image: url("../img/icon-feature-ball.svg");
-  background-position: 9px 0;
+  background-position: 9px 2px;
 }
 
 .advantages__item--patriotic {
+  padding-top: 53px;
+  padding-left: 6px;
+
   background-image: url("../img/icon-feature-rocket.svg");
-  background-position: 0 0;
+  background-position: 0 3px;
 }
 
 .advantages__item--packaging {
+  padding-top: 53px;
+  padding-left: 6px;
+  padding-right: 55px;
+
   background-image: url("../img/icon-feature-gift.svg");
   background-position: 9px 0;
 }
@@ -70,16 +89,19 @@
   .advantages {
     width: $tablet-width;
     margin: 0 auto;
-    padding-top: 70px;
-    padding-left: 50px;
+    padding-top: 68px;
+    padding-left: 45px;
     padding-right: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 21px;
 
     background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 772px 17px;
+    background-position: -22px 0;
   }
 
   .advantages__title {
-    margin-bottom: 40px;
+    padding-left: 0;
+    margin-bottom: 48px;
 
     font-size: 43px;
     line-height: 50px;
@@ -97,38 +119,51 @@
 
   .advantages__item {
     display: block;
-    width: 325px;
+    width: 310px;
     min-height: 110px;
-    margin: 0;
+    padding-right: 90px;
+    margin-right: 20px;
+    margin-bottom: 47px;
   }
 
   .advantages__item--material {
     order: 1;
-    padding-right: 110px;
   }
 
   .advantages__item--style {
     order: 3;
-    padding-right: 80px;
+    padding-top: 54px;
+    padding-right: 65px;
   }
 
   .advantages__item--social {
     order: 5;
-    padding-right: 100px;
   }
 
   .advantages__item--handmade {
     order: 2;
-    padding-right: 60px;
+    padding-top: 55px;
+    padding-left: 9px;
+    padding-right: 45px;
+
+    background-position: 12px 4px;
   }
 
   .advantages__item--patriotic {
     order: 4;
+    padding-left: 9px;
+    padding-right: 0;
+
+    background-position: 3px 3px;
   }
 
   .advantages__item--packaging {
     order: 6;
-    padding-right: 70px;
+    padding-top: 51px;
+    padding-left: 9px;
+    padding-right: 60px;
+
+    background-position: 12px 0;
   }
 }
 
@@ -136,16 +171,19 @@
   .advantages {
     width: $desktop-container;
     margin: 0 auto;
-    padding-top: 90px;
-    padding-left: 175px;
+    padding-top: 81px;
+    padding-left: 170px;
     padding-right: 175px;
-    padding-bottom: 85px;
+    padding-bottom: 30px;
 
     background-image: url("../img/bg-zigzag-line.svg");
+    background-position: -27px 0;
+    background-size: $desktop-container 23px;
   }
 
   .advantages__title {
-    margin-bottom: 40px;
+    margin-left: -1px;
+    margin-bottom: 47px;
 
     font-size: 53px;
     line-height: 57px;
@@ -155,32 +193,20 @@
     width: 700px;
   }
 
+  .advantages__item {
+    padding-right: 65px;
+    margin-right: 38px;
+  }
+
   .advantages__item--material {
-    width: 340px;
-    padding-right: 110px;
-  }
-
-  .advantages__item--style {
-    width: 340px;
-    padding-right: 80px;
-  }
-
-  .advantages__item--social {
-    width: 340px;
     padding-right: 100px;
   }
 
   .advantages__item--handmade {
-    width: 360px;
-    padding-right: 60px;
+    padding-right: 45px;
   }
 
   .advantages__item--patriotic {
-    width: 360px;
-  }
-
-  .advantages__item--packaging {
-    width: 360px;
-    padding-right: 70px;
+    padding-right: 0;
   }
 }
