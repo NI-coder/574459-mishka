@@ -22,6 +22,15 @@
   padding-top: 5px;
 }
 
+.social__link:hover path,
+.social__link:focus path {
+  fill: $fade-green-hover;
+}
+
+.social__link:active path {
+  fill: transparentize($fade-green-hover, 0.7);
+}
+
 @media (min-width: $tablet-width) {
   .social {
     width: 167px;

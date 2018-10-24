@@ -84,6 +84,20 @@
 
 .best-seller__button {
   padding-top: 15px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+
+    background-color: transparentize($text-color, 0.3);
+    border-color: transparentize($text-color, 1);
+  }
 }
 
 @media (min-width: $tablet-width) {

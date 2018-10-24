@@ -75,6 +75,15 @@
 
   background-color: $transparent;
   border: none;
+
+  &:hover .reviews__toggle-arrow,
+  &:focus .reviews__toggle-arrow {
+    fill: $black-hover;
+  }
+
+  &:active .reviews__toggle-arrow {
+    fill: $black-active;
+  }
 }
 
 .reviews__toggle--prev {
