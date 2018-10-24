@@ -5,6 +5,10 @@
 
   @include zero-indent;
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .product-card__image-wrapper {
@@ -38,18 +42,17 @@
   position: relative;
 
   width: $mobile-container;
-  min-height: 180px;
+  min-height: 179px;
   margin: 0;
   padding: 27px;
-  padding-top: 30px;
-  padding-bottom: 85px;
+  padding-bottom: 91px;
 
   border: 1px solid $border-gray;
 }
 
 .product-card__name {
   @include zero-indent;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   font-size: 17px;
   line-height: 24px;
@@ -71,9 +74,9 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 205px;
   height: 74px;
+  padding-top: 23px;
 
   border-top: 1px solid $light-gray;
 }
@@ -82,6 +85,7 @@
   width: 170px;
 
   @include zero-indent;
+
   font-size: 15px;
 }
 

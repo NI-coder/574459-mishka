@@ -10,16 +10,36 @@
 }
 
 .production-video__title {
+  position: relative;
+
   @include zero-indent;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-left: 90px;
-  margin-bottom: 25px;
+  padding-bottom: 24px;
 
   font-size: 17px;
   line-height: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 35px;
+    left: 34px;
+
+    width: 32px;
+    height: 22px;
+
+    background-color: $white;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .production-video__video-wrapper {
+  width: 260px;
+  height: 150px;
+
   @include zero-indent;
 
   line-height: 0;
@@ -28,6 +48,8 @@
 .production-video__intro {
   margin: 0;
   padding: 33px 34px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   font-size: 13px;
   font-weight: 400;
