@@ -8,8 +8,7 @@
 
   @include zero-indent;
   padding-top: 72px;
-  padding-bottom: 77px;
-  margin-bottom: 30px;
+  padding-bottom: 75px;
 
   font-size: 27px;
   line-height: 30px;
@@ -22,10 +21,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
-  @include zero-indent;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0;
+  padding: 30px;
 
   list-style: none;
 }
