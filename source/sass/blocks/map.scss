@@ -1,4 +1,6 @@
 .map {
+  position: relative;
+
   width: $mobile-width;
   height: 457px;
 
@@ -6,10 +8,10 @@
 
   line-height: 0;
 
-  background-image: url("../img/map-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: $mobile-width auto;
+  background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 139px 145px, center;
+  background-size: 67px 100px, $mobile-width auto;
 }
 
 .map-iframe {
@@ -21,8 +23,10 @@
   .map {
     width: $tablet-width;
 
-    background-image: url("../img/map-tablet@1x.jpg");
-    background-size: $tablet-width auto;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 363px 139px, center;
+    background-size: 67px 100px, $tablet-width auto;
   }
 
   .map-iframe {
@@ -35,8 +39,10 @@
   .map {
     width: 525px;
 
-    background-image: url("../img/map-desktop@1x.jpg");
-    background-size: 525px auto;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 239px 146px, center;
+    background-size: 67px 100px, 525px auto;
   }
 
   .map-iframe {
