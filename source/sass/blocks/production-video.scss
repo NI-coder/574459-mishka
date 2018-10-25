@@ -7,6 +7,15 @@
   margin-bottom: 58px;
 
   border: 1px solid $border-gray;
+
+
+  &:hover .production-video__main-wrapper,
+  &:focus .production-video__main-wrapper {
+    box-shadow: 0 3px 10px 2px $light-gray;
+  }
+    &:active .production-video__main-wrapper {
+    box-shadow: 0 2px 5px 0 $light-gray;
+  }
 }
 
 .production-video__title {
@@ -37,12 +46,38 @@
 }
 
 .production-video__video-wrapper {
+  position: relative;
+
   width: 260px;
   height: 150px;
 
   @include zero-indent;
 
   line-height: 0;
+}
+
+.production-video__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 120px;
+  height: 92px;
+  margin-left: -60px;
+  margin-top: -47px;
+
+  background-color: $transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production-video__intro {
@@ -67,10 +102,15 @@
     border: none;
   }
 
+  .production-video__main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .production-video__title {
     order: 2;
     width: $tablet-container;
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 105px;
     margin-bottom: 0;
 
@@ -78,6 +118,11 @@
 
     border: 1px solid $light-gray;
     border-bottom: none;
+
+    &::before {
+      top: 38px;
+      left: 41px;
+    }
   }
 
   .production-video__video-wrapper {
@@ -103,6 +148,8 @@
 
   .production-video__intro {
     padding: 40px;
+    padding-top: 8px;
+    padding-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
@@ -126,9 +173,14 @@
 
   .production-video__title {
     width: 367px;
-    padding-top: 100px;
+    padding-top: 94px;
     padding-left: 79px;
     padding-right: 130px;
+
+    &::before {
+      top: 47px;
+      left: 80px;
+    }
   }
 
   .production-video__video-wrapper {
@@ -144,7 +196,7 @@
   }
 
   .production-video__intro-wrapper {
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 78px;
     padding-right: 57px;
     padding-bottom: 60px;
@@ -152,6 +204,6 @@
 
   .production-video__intro {
     @include zero-indent;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
