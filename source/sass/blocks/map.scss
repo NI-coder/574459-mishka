@@ -41,11 +41,12 @@
 
     background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 239px 146px, center;
+    background-position: 239px 153px, center;
     background-size: 67px 100px, 525px auto;
   }
 
   .map-iframe {
     width: 525px;
+    height: 457px;
   }
 }
