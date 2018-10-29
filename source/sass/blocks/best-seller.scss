@@ -64,9 +64,14 @@
 }
 
 .best-seller__image-wrapper {
-  @include zero-indent;
+  height: 315px;
 
-  line-height: 0;
+  @include zero-indent;
+}
+
+.best-seller__image {
+  width: $mobile-container;
+  height: 315px;
 }
 
 .best-seller__price-wrapper {
@@ -162,6 +167,11 @@
     margin-bottom: 0;
   }
 
+  .best-seller__image {
+    width: 333px;
+    height: 404px;
+  }
+
   .best-seller__details {
     margin: 0;
   }
@@ -242,7 +252,12 @@
     left: 575px;
 
     width: 525px;
-    height: auto;
+    height: 636px;
+  }
+
+  .best-seller__image {
+    width: 525px;
+    height: 636px;
   }
 
   .best-seller__price {
