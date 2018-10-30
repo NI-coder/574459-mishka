@@ -1,13 +1,25 @@
 .modal-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: block;
   width: $mobile-width;
   min-height: 336px;
-  margin: 0 auto;
+  margin-top: -168px;
+  margin-left: -160px;
   padding-top: 35px;
   padding-right: 30px;
   padding-bottom: 45px;
   padding-left: 30px;
 
+  background-color: $white;
+
   border-top: 1px solid rgb(199, 199, 199);
+
+  box-shadow: 0 5px 10px 5px $menu-bottom;
+
+  z-index: 20;
 }
 
 .modal-form__title {
@@ -51,10 +63,23 @@
   text-align: center;
 
   border: 2px solid $light-gray;
+
+  &:hover,
+  &:focus {
+    border-color: rgb(199, 199, 199);
+  }
+
+  &:active {
+    border-color: $input-green;
+  }
 }
 
 .modal-form__sizes-field {
   display: none;
+}
+
+.modal-form__sizes-field:checked + .modal-form__sizes-item {
+  border-color: $input-green;
 }
 
 .modal-form__button {
@@ -72,6 +97,7 @@
   .modal-form {
     width: 566px;
     padding: 45px 100px;
+    margin-left: -283px;
 
     border: 1px solid rgb(199, 199, 199);
   }

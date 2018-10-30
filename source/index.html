@@ -273,41 +273,25 @@
         </div>
       </footer>
       <section class="order-modal">
+        <h2 class="visually-hidden">Всплывающее модальное окно добавления в корзину заказов</h2>
         <form class="order-modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="modal-form__title">Добавить в корзину</h2>
+          <h3 class="modal-form__title">Добавить в корзину</h3>
           <p class="modal-form__offer">
             Выберите размер:
           </p>
           <div class="modal-form__sizes-list">
-            <label class="modal-form__sizes-item">S
-              <input class="modal-form__sizes-field" type="radio" name="sizes" value="s" checked>
-            </label>
-            <label class="modal-form__sizes-item">M
-              <input class="modal-form__sizes-field" type="radio" name="sizes" value="m">
-            </label>
-            <label class="modal-form__sizes-item">L
-              <input class="modal-form__sizes-field" type="radio" name="sizes" value="l">
-            </label>
+            <input class="modal-form__sizes-field" id="s-field" type="radio" name="sizes" value="s" checked>
+            <label class="modal-form__sizes-item" for="s-field">S</label>
+            <input class="modal-form__sizes-field" id="m-field" type="radio" name="sizes" value="m">
+            <label class="modal-form__sizes-item" for="m-field">M</label>
+            <input class="modal-form__sizes-field" id="l-field" type="radio" name="sizes" value="l">
+            <label class="modal-form__sizes-item" for="l-field">L</label>
           </div>
           <button class="modal-form__button button" type="submit">Добавить</button>
         </form>
       </section>
     </div>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
