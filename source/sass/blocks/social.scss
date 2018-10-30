@@ -22,8 +22,8 @@
   padding-top: 5px;
 }
 
-.social__link:hover path,
-.social__link:focus path {
+.social__link:hover svg,
+.social__link:focus svg {
   fill: $fade-green-hover;
 }
 

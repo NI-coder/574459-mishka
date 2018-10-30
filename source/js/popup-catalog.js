@@ -1,4 +1,4 @@
-var cartLink = document.querySelector(".product-card__button");
+var cartLink = document.querySelectorAll(".product-card__button");
 var popup = document.querySelector(".order-modal");
 var modalBtn = popup.querySelector(".modal-form__button");
 
