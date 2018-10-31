@@ -9,9 +9,10 @@
   border: 1px solid $border-gray;
 }
 
-.production-video__main-wrapper:hover,  .production-video__main-wrapper:focus {
+.production-video__main-wrapper:hover, .production-video__main-wrapper:focus {
   box-shadow: 0 3px 10px 2px $light-gray;
 }
+
 .production-video__main-wrapper:active {
   box-shadow: 0 2px 5px 0 $light-gray;
 }

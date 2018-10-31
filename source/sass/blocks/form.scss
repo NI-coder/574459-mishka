@@ -291,7 +291,7 @@
 
 .form__input-icon:hover,
 .form__input--text:hover + .form__input-icon,
-.form__input--text:focus + .form__input-icon  {
+.form__input--text:focus + .form__input-icon {
   fill: $input-green;
 }
 
@@ -475,11 +475,11 @@
     }
 
     &::after {
-    top: 12px;
-    left: 12px;
+      top: 12px;
+      left: 12px;
 
-    width: 30px;
-    height: 17px;
+      width: 30px;
+      height: 17px;
     }
   }
 

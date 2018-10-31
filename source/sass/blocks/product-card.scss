@@ -14,7 +14,8 @@
   &:focus .product-card__info-wrapper {
     box-shadow: 0 3px 10px 2px $light-gray;
   }
-    &:active .product-card__info-wrapper {
+
+  &:active .product-card__info-wrapper {
     box-shadow: 0 2px 5px 0 $light-gray;
   }
 }
