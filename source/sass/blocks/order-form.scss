@@ -65,13 +65,15 @@
   }
 
   .order-form__title {
-    padding-bottom: 108px;
+    padding-bottom: 120px;
 
     font-size: 53px;
     line-height: 57px;
+
+    background-size: $desktop-width;
   }
 
   .order-form__intro {
-    padding: 117px 225px 10px;
+    padding: 105px 225px 10px;
   }
 }
