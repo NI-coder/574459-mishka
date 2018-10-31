@@ -125,19 +125,19 @@
   border: none;
 
   cursor: pointer;
+}
 
-  &:hover path,
-  &:focus path {
-    fill: $green;
-  }
+.product-card__button svg {
+  fill: rgba(0, 0, 0, 0.2);
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.product-card__button:hover svg,
+.product-card__button:focus svg {
+  fill: $green;
+}
 
-  &:active path {
-    fill: $green;
-  }
+.product-card__button:active svg {
+  fill: rgba(99, 209, 187, 0.3);
 }
 
 @media (min-width: $tablet-width) {

@@ -169,11 +169,15 @@
   cursor: pointer;
 }
 
-.main-nav__button:hover path {
+.main-nav__button svg {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.main-nav__button:hover svg {
   fill: $green;
 }
 
-.main-nav__button:active path {
+.main-nav__button:active svg {
   fill: rgba(99, 209, 187, 0.3);
 }
 

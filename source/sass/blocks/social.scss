@@ -22,26 +22,12 @@
   padding-top: 5px;
 }
 
-.social__link:hover path,
-.social__link:focus path {
+.social__link:hover svg,
+.social__link:focus svg {
   fill: $fade-green-hover;
 }
 
-
-//тестовые стили для проверки работы спрайта для иконки перхода в твиттер в футере на главной странице
-.social__link:hover use,
-.social__link:focus use {
-  fill: $fade-green-hover;
-}
-
-.social__link-icon path {
-  fill: $fade-green-hover;
-}
-
-//конец тестовых стилей
-
-
-.social__link:active path {
+.social__link:active svg {
   fill: transparentize($fade-green-hover, 0.7);
 }
 
