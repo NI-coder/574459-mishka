@@ -21,6 +21,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
   .page-footer_container {
     display: flex;
     flex-wrap: wrap;
@@ -36,19 +41,39 @@
 
     @include zero-indent;
     margin-right: 83px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 53px;
   }
 
   .page-footer__logo-link {
     display: block;
     width: 102px;
     height: 34px;
+
+    &:hover svg,
+    &:focus svg {
+      fill: $fade-green-hover;
+    }
+
+    &:active svg {
+      fill: transparentize($fade-green-hover, 0.7);
+    }
+
+    &--active {
+      cursor: default;
+    }
+
+    &--active svg,
+    &--active:hover svg,
+    &--active:focus svg,
+    &--active:active svg {
+      fill: $black;
+    }
   }
 
   .page-footer__social-wrapper {
     width: 167px;
     margin: 0;
+    padding-right: 4px;
 
     border: none;
   }
@@ -59,6 +84,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
+
   .page-footer_container {
     width: $desktop-width;
     margin: 0 auto;
@@ -81,5 +110,6 @@
 
   .page-footer__social-wrapper {
     width: 348px;
+    padding-right: 0;
   }
 }

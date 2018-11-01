@@ -12,17 +12,77 @@
   padding-bottom: 10px;
 }
 
+.form__item--name {
+  padding-bottom: 5px;
+}
+
+.form__item--contacts {
+  padding-bottom: 0;
+}
+
+.form__item--wishes {
+  flex-direction: column-reverse;
+  padding-bottom: 0;
+}
+
 .form__title {
+  position: relative;
+
   display: block;
   width: 100%;
 
   @include zero-indent;
+  padding-right: 198px;
   margin-bottom: 25px;
 
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $green;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    background-color: $input-green;
+  }
+}
+
+.form__title--name {
+  margin-bottom: 20px;
+}
+
+.form__title--contacts {
+  margin-bottom: 6px;
+}
+
+.form__title--wishes::before {
+  position: absolute;
+  content: "";
+  top: 41px;
+  left: 0;
+
+  width: $mobile-container;
+  height: 142px;
+
+  border: 2px solid $text-color;
+}
+
+.form__wrapper {
+  margin-bottom: 20px;
+}
+
+.form__wrapper--colour {
+  margin-bottom: 0;
+}
+
+.form__wrapper--name {
+  margin-bottom: 15px;
 }
 
 .form__inner {
@@ -34,78 +94,245 @@
   line-height: 18px;
 }
 
-.form__inner--type,
-.form__inner--colour {
-  min-height: 40px;
-  margin-bottom: 21px;
+.form__inner--name,
+.form__inner--contacts {
+  position: relative;
+
+  flex-direction: column-reverse;
 }
 
-.form__inner--name {
-  display: flex;
-  flex-wrap: wrap;
+.form__label {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 14px;
 }
 
-.form__label--text {
+.form__label--radio {
+  position: relative;
+
+  padding-left: 62px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: $white;
+    border: 2px solid $text-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
+
+    display: none;
+    width: 16px;
+    height: 16px;
+
+    background-color: $input-green;
+    border-radius: 50%;
+  }
+}
+
+.form__label--checkbox {
+  position: relative;
+
+  padding-left: 62px;
+  padding-bottom: 18px;
+  margin-bottom: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 39px;
+
+    border: 2px solid $text-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 9px;
+
+    display: none;
+    width: 22px;
+    height: 10px;
+
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.form__input-radio:checked + .form__label--radio::after,
+.form__input-checkbox:checked + .form__label--checkbox::after {
   display: block;
-  width: 101px;
-
-  @include zero-indent;
-  margin-right: 25px;
 }
 
-.form__label--text-name {
-  width: 48px;
+.form__label--radio:hover::before,
+.form__label--checkbox:hover::before {
+  border-color: $input-green;
+}
+
+.form__label--radio:active::before,
+.form__label--checkbox:active::before {
+  border-color: $fade-text;
+}
+
+.form__input-radio:focus + .form__label--radio,
+.form__input-checkbox:focus + .form__label--checkbox {
+  text-decoration: underline;
+}
+
+.form__label--name,
+.form__title--contacts {
+  width: $mobile-container;
+  padding-bottom: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+
+    width: 260px;
+    height: 2px;
+
+    background-color: $black;
+  }
+}
+
+.form__label--name::before {
+  bottom: 12px;
+}
+
+.form__title--contacts::before {
+  bottom: -58px;
 }
 
 .form__input--text {
   display: block;
   width: 100%;
   min-height: $cell-height;
+  padding-right: 40px;
   margin-bottom: 24px;
 
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
-  color: $fade-text;
+  color: $text-color;
 
   border: none;
-  border-bottom: 2px solid $black;
+
+  opacity: 0.3;
 }
 
-.form__label--contacts,
-.form__label--wishes {
+.form__input--text-name {
+  margin-bottom: 11px;
+}
+
+.form__input--text-contacts {
+  margin-bottom: 33px;
+}
+
+.form__input--text-contacts[type="tel"] {
+  font-size: 19px;
+}
+
+.form__input--text:hover + .form__label--name::before,
+.form__input--text:hover ~ .form__title--contacts::before,
+.form__input--text:focus + .form__label--name::before,
+.form__input--text:focus ~ .form__title--contacts::before,
+.form__input--text:active + .form__label--name::before,
+.form__input--text:active ~ .form__title--contacts::before {
+  background-color: $input-green;
+}
+
+.form__input--text:focus,
+.form__input--text:active {
+  opacity: 1;
+}
+
+.form__input-icon {
+  position: absolute;
+
   display: block;
-  width: $mobile-container;
 
-  @include zero-indent;
-  margin-bottom: 5px;
+  fill: rgba(68, 68, 68, 0.2);
+}
 
-  font-size: 17px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $green;
+.form__input-icon--phone {
+  bottom: 50px;
+  right: 9px;
+
+  width: 25px;
+  height: 24px;
+}
+
+.form__input-icon--email {
+  bottom: 42px;
+  right: 5px;
+
+  width: 32px;
+  height: 32px;
+}
+
+.form__input-icon:hover,
+.form__input--text:hover + .form__input-icon,
+.form__input--text:focus + .form__input-icon {
+  fill: $input-green;
+}
+
+.form__input-icon:hover + .form__title--contacts::before {
+  background-color: $input-green;
 }
 
 .form__textarea {
   display: block;
   width: 100%;
-  min-height: 142px;
+  min-height: 140px;
   margin: 0;
   padding: 15px;
-  margin-bottom: 17px;
 
   font-size: 17px;
   line-height: 18px;
-  color: $fade-text;
+  color: $text-color;
 
-  border: 2px solid $text-color;
+  border: none;
+
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.form__textarea:hover + .form__title--wishes::before,
+.form__textarea:focus + .form__title--wishes::before,
+.form__textarea:active + .form__title--wishes::before {
+  border-color: $input-green;
+}
+
+.form__textarea:focus,
+.form__textarea:active {
+  opacity: 1;
 }
 
 .form__note {
   @include zero-indent;
+  padding-top: 18px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 31px;
 
   font-size: 14px;
   line-height: 16px;
@@ -121,6 +348,8 @@
   line-height: 16px;
   font-weight: 700;
   color: $text-color;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -133,10 +362,32 @@
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
+    padding-top: 44px;
+    padding-bottom: 26px;
 
     &:nth-of-type(2n+1) {
       background-color: $white;
     }
+  }
+
+  .form__item--colour {
+    padding-top: 51px;
+  }
+
+  .form__item--name {
+    padding-top: 49px;
+  }
+
+  .form__item--contacts {
+    padding-top: 49px;
+  }
+
+  .form__item--wishes {
+    flex-direction: row-reverse;
+    order: 1;
+    width: $tablet-container;
+
+    @include zero-indent;
   }
 
   .form__title {
@@ -144,10 +395,31 @@
     width: 167px;
 
     @include zero-indent;
+    padding-top: 18px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__title--contacts::before {
+    left: 167px;
+    bottom: 25px;
+
+    width: 501px;
+  }
+
+  .form__title--wishes::before {
+    top: 0;
+    left: 167px;
+
+    width: 501px;
   }
 
   .form__wrapper {
     width: 501px;
+
+    @include zero-indent;
   }
 
   .form__wrapper--colour {
@@ -160,40 +432,76 @@
     font-size: 19px;
   }
 
-  .form__inner--type,
-  .form__inner--colour {
-    padding-left: 80px;
-  }
-
   .form__inner--colour {
     width: 240px;
   }
 
   .form__inner--name {
+    flex-direction: row-reverse;
     width: 501px;
   }
 
-  .form__input--text {
-    width: 375px;
-
-    font-size: 19px;
+  .form__inner--contacts {
+    flex-direction: row-reverse;
+    width: $tablet-container;
   }
 
-  .form__input--text-name {
+  .form__label {
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+  }
+
+  .form__label--radio {
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      top: 15px;
+      left: 15px;
+
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .form__label--checkbox {
+    &::before {
+      width: 54px;
+      height: 52px;
+    }
+
+    &::after {
+      top: 12px;
+      left: 12px;
+
+      width: 30px;
+      height: 17px;
+    }
+  }
+
+  .form__label--name {
+    width: 73px;
+    padding-left: 0;
+  }
+
+  .form__label--name-wide {
+    width: 126px;
+  }
+
+  .form__label--name::before {
+    left: auto;
+    right: 0;
+    bottom: 24px;
+
     width: 428px;
   }
 
-  .form__label--text {
-    padding-top: 15px;
-  }
-
-  .form__item--contacts {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .form__inner--contacts {
-    display: flex;
+  .form__label--name-wide::before {
+    width: 375px;
   }
 
   .form__label--contacts,
@@ -204,10 +512,31 @@
     padding-top: 15px;
   }
 
+  .form__input--text {
+    flex-grow: 1;
+    width: auto;
+    height: 52px;
+    padding-left: 18px;
+    padding-right: 0;
+
+    font-size: 19px;
+  }
+
   .form__input--text-contacts {
     width: 501px;
+    margin-bottom: 25px;
 
     background-color: $bg-gray;
+  }
+
+  .form__input-icon--phone {
+    top: 12px;
+    right: 25px;
+  }
+
+  .form__input-icon--email {
+    top: 10px;
+    right: 22px;
   }
 
   .form_additional {
@@ -217,13 +546,6 @@
     padding: 50px;
 
     background-color: $white;
-  }
-
-  .form__item--wishes {
-    display: flex;
-    order: 1;
-
-    @include zero-indent;
   }
 
   .form__textarea {
@@ -237,7 +559,9 @@
 
   .form__note {
     order: 3;
-    padding-top: 15px;
+
+    @include zero-indent;
+    padding-top: 10px;
 
     font-size: 17px;
     line-height: 30px;
@@ -257,15 +581,30 @@
   }
 
   .form__item {
-    padding: 50px 225px 50px 110px;
+    padding: 48px 225px 26px 110px;
   }
 
   .form__item--colour {
     padding-right: 50px;
   }
 
+  .form__item--contacts {
+    padding-bottom: 25px;
+  }
+
+  .form__item--wishes {
+    @include zero-indent;
+  }
+
   .form__title {
     width: 115px;
+  }
+
+  .form__title--contacts::before,
+  .form__title--wishes::before {
+    left: 115px;
+
+    width: 700px;
   }
 
   .form__wrapper {
@@ -273,8 +612,6 @@
   }
 
   .form__wrapper--colour {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     width: 800px;
   }
@@ -287,21 +624,34 @@
     width: 700px;
   }
 
-  .form__input--text {
-    width: 573px;
+  .form__inner--contacts,
+  .form__item--wishes {
+    width: 100%;
   }
 
-  .form__input--text-name {
+  .form__label--name {
+    padding-bottom: 21px;
+  }
+
+  .form__label--name::before {
     width: 626px;
   }
 
-  .form__label--contacts,
-  .form__label--wishes {
-    width: 115px;
+  .form__label--name-wide::before {
+    width: 573px;
   }
 
   .form__input--text-contacts {
     width: 700px;
+  }
+
+  .form__input-icon--phone {
+    right: 8px;
+  }
+
+  .form__input-icon--email {
+    top: 10px;
+    right: 4px;
   }
 
   .form_additional {
@@ -309,18 +659,14 @@
     padding-right: 225px;
   }
 
-  .form__item--wishes {
-    @include zero-indent;
-  }
-
   .form__textarea {
     width: 700px;
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 
   .form__note {
     @include zero-indent;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   .form__button {

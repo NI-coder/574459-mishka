@@ -1,13 +1,27 @@
 @media (min-width: $tablet-width) {
   .page-header {
-    background-image: linear-gradient($white 90px, $bg-gray 90px);
+    width: $tablet-width;
+    margin: 0 auto;
+
+    background-image: linear-gradient($white 89px, $bg-gray 89px);
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .page-header--index {
-    background-image: url("../img/hero-tablet@1x.jpg"), linear-gradient($white 90px, $bgmenu-gray 90px);
+    background-image: url("../img/hero-tablet@1x.jpg"), linear-gradient($white 89px, $bgmenu-gray 89px);
     background-repeat: no-repeat, no-repeat;
-    background-position: center 90px, 0 0;
+    background-position: center 89px, 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg"), linear-gradient($white 89px, $bgmenu-gray 89px);
+      background-size: 1150px 746px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
   }
 }

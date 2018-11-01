@@ -1,5 +1,6 @@
 .social {
   width: $mobile-width;
+  padding-right: 5px;
 }
 
 .social__list {
@@ -17,6 +18,19 @@
   list-style: none;
 }
 
+.social__item {
+  padding-top: 5px;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: $fade-green-hover;
+}
+
+.social__link:active svg {
+  fill: transparentize($fade-green-hover, 0.7);
+}
+
 @media (min-width: $tablet-width) {
   .social {
     width: 167px;
@@ -24,5 +38,10 @@
 
   .social__list {
     min-height: 143px;
+    padding-right: 0;
+  }
+
+  .social__item {
+    padding-top: 10px;
   }
 }
