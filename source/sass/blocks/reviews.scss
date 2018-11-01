@@ -67,6 +67,8 @@
 }
 
 .reviews__toggle {
+  position: relative;
+
   display: block;
   width: 128px;
   height: $cell-height;
@@ -76,14 +78,55 @@
   background-color: $transparent;
   border: none;
 
-  &:hover .reviews__toggle-arrow,
-  &:focus .reviews__toggle-arrow {
-    fill: $black-hover;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 24px;
+    left: 42px;
+
+    width: 46px;
+    height: 4px;
+
+    background-color: black;
+
+    transform: translateY(-50%);
   }
 
-  &:active .reviews__toggle-arrow {
-    fill: $black-active;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 41px;
+
+    width: 19px;
+    height: 19px;
+
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+
+    transform: rotate(45deg);
   }
+}
+
+
+.reviews__toggle:hover::before,
+.reviews__toggle:focus::before {
+  background-color: $black-hover;
+}
+
+.reviews__toggle:hover::after,
+.reviews__toggle:focus::after {
+  border-color: $black-hover;
+}
+
+.reviews__toggle:active::before {
+  background-color: $black-active;
+}
+
+.reviews__toggle:active::after {
+  border-color: $black-active;
 }
 
 .reviews__toggle--prev {
@@ -92,6 +135,16 @@
 
 .reviews__toggle--next {
   float: right;
+
+  &::before {
+    left: 36px;
+  }
+
+  &::after {
+    left: 64px;
+
+    transform: rotate(-135deg);
+  }
 }
 
 .reviews__button {
@@ -163,6 +216,26 @@
 
   .reviews__toggle {
     width: 87px;
+
+    &::before {
+      top: 27px;
+      left: 24px;
+    }
+
+    &::after {
+      top: 17px;
+      left: 23px;
+    }
+  }
+
+  .reviews__toggle--next {
+    &::before {
+      left: 18px;
+    }
+
+    &::after {
+      left: 45px;
+    }
   }
 
   .reviews__button {
