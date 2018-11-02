@@ -34,6 +34,20 @@
   margin-bottom: 33px;
 
   line-height: 16px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+
+    background-color: transparentize($text-color, 0.3);
+    border-color: transparentize($text-color, 1);
+  }
 }
 
 @media (min-width: $tablet-width) {
