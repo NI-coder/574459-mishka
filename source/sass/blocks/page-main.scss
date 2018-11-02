@@ -1,6 +1,7 @@
 .page-main {
   padding-top: 70px;
 
+  background-color: $bgmenu-gray;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -18px;
@@ -24,11 +25,16 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: $tablet-width;
-    margin: 0 auto;
     padding-top: 65px;
 
-    background-image: none;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -89px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .page-main__main-title {
@@ -43,10 +49,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    width: $desktop-width;
-  }
-
   .page-main__main-title {
     margin-bottom: 359px;
 

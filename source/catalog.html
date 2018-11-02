@@ -10,12 +10,12 @@
     </script>
     <script src="js/picturefill.js" async></script>
   </head>
-  <body class="page-container">
+  <body>
     <svg style="display: none">
       <include src="build/img/sprite.svg"></include>
     </svg>
     <header class="page-header">
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active main-nav__item--logo">
             <a class="main-nav__logo-link" href="index.html" title="Переход на главную страницу">
@@ -244,21 +244,19 @@
       </div>
     </footer>
     <section class="order-modal">
+      <h2 class="visually-hidden">Всплывающее модальное окно добавления в корзину заказов</h2>
       <form class="order-modal__form modal-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="modal-form__title">Добавить в корзину</h2>
         <p class="modal-form__offer">
           Выберите размер:
         </p>
         <div class="modal-form__sizes-list">
-          <label class="modal-form__sizes-item">S
-            <input class="modal-form__sizes-field" type="radio" name="sizes" value="s" checked="">
-          </label>
-          <label class="modal-form__sizes-item">M
-            <input class="modal-form__sizes-field" type="radio" name="sizes" value="m">
-          </label>
-          <label class="modal-form__sizes-item">L
-            <input class="modal-form__sizes-field" type="radio" name="sizes" value="l">
-          </label>
+          <input class="modal-form__sizes-field" id="s-field" type="radio" name="sizes" value="s" checked="">
+          <label class="modal-form__sizes-item" for="s-field">S</label>
+          <input class="modal-form__sizes-field" id="m-field" type="radio" name="sizes" value="m">
+          <label class="modal-form__sizes-item" for="m-field">M</label>
+          <input class="modal-form__sizes-field" id="l-field" type="radio" name="sizes" value="l">
+          <label class="modal-form__sizes-item" for="l-field">L</label>
         </div>
         <button class="modal-form__button button" type="submit">Добавить</button>
       </form>

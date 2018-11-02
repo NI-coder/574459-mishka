@@ -10,13 +10,15 @@
     </script>
     <script src="js/picturefill.js" async></script>
   </head>
-  <body class="page-container page-container--index">
+  <body>
     <svg style="display: none">
       <include src="build/img/sprite.svg"></include>
     </svg>
+<!--
     <div class="page-container__index-wrapper">
+-->
       <header class="page-header page-header--index">
-        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active main-nav__item--logo">
               <a class="main-nav__logo-link main-nav__logo-link--active" href="#">
@@ -66,16 +68,14 @@
         <h1 class="page-main__main-title">Милые штуки ручной<br> работы для дома</h1>
         <section class="catalog-intro">
           <h2 class="visually-hidden">Наш каталог готовых изделий</h2>
-          <nav class="catalog-intro__nav">
-            <ul class="catalog-intro__list">
-              <li class="catalog-intro__item">
-                <a class="catalog-intro__link catalog-intro__link--interior" href="catalog-interior.html"><span class="catalog-intro__link-inner">Предметы интерьера</span></a>
-              </li>
-              <li class="catalog-intro__item">
-                <a class="catalog-intro__link catalog-intro__link--toys" href="catalog-toys.html"><span class="catalog-intro__link-inner">Детские игрушки</span></a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="catalog-intro__list">
+            <li class="catalog-intro__item catalog-intro__item--interior">
+              <a class="catalog-intro__link catalog-intro__link--interior" href="catalog-interior.html"><span class="catalog-intro__link-inner">Предметы интерьера</span></a>
+            </li>
+            <li class="catalog-intro__item catalog-intro__item--toys">
+              <a class="catalog-intro__link catalog-intro__link--toys" href="catalog-toys.html"><span class="catalog-intro__link-inner">Детские игрушки</span></a>
+            </li>
+          </ul>
         </section>
         <div class="white-background">
           <section class="best-seller">
@@ -172,34 +172,36 @@
             </a>
           </section>
           <section class="contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <div class="contacts__wrapper">
-              <div class="contacts__inner">
-                <p class="contacts__item">
-                  e-mail:
-                </p>
-                <p class="contacts__text">
-                  <a class="contacts__email-link" href="contacts.html" title="Переход в форму обратной связи">info@mimimishkashop.ru</a>
-                </p>
+            <div class="contacts__container">
+              <div class="contacts__wrapper">
+              <h2 class="contacts__title">Контакты</h2>
+                <div class="contacts__inner">
+                  <p class="contacts__item">
+                    e-mail:
+                  </p>
+                  <p class="contacts__text">
+                    <a class="contacts__email-link" href="contacts.html" title="Переход в форму обратной связи">info@mimimishkashop.ru</a>
+                  </p>
+                </div>
+                <div class="contacts__inner">
+                  <p class="contacts__item">
+                    адрес:
+                  </p>
+                  <p class="contacts__text contacts__text--address">
+                    г. Санкт-Петербург,<br>
+                    ул. Большая Конюшенная,<br>
+                    д. 19/8, офис 101
+                  </p>
+                </div>
               </div>
-              <div class="contacts__inner">
-                <p class="contacts__item">
-                  адрес:
-                </p>
-                <p class="contacts__text contacts__text--address">
-                  г. Санкт-Петербург,<br>
-                  ул. Большая Конюшенная,<br>
-                  д. 19/8, офис 101
-                </p>
-              </div>
+              <p class="contacts__map map">
+                <span class="visually-hidden">Карта местонахождения офиса</span>
+                <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2376.7437579883167!2d30.322394146843607!3d59.93885720439351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541186674286" width="1150" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </p>
+              <a class="contacts__button button" href="contacts.html" title="Переход в форму обратной связи">
+                Напишите нам
+              </a>
             </div>
-            <p class="contacts__map map">
-              <span class="visually-hidden">Карта местонахождения офиса</span>
-              <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.32085871577046!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540123738007" width="525" height="457" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-            </p>
-            <a class="contacts__button button" href="contacts.html" title="Переход в форму обратной связи">
-              Напишите нам
-            </a>
           </section>
         </div>
       </main>
@@ -267,7 +269,7 @@
           <button class="modal-form__button button" type="submit">Добавить</button>
         </form>
       </section>
-    </div>
+<!--    </div>  -->
     <script src="js/menu.js"></script>
     <script src="js/popup.js"></script>
   </body>
