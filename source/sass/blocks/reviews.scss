@@ -1,9 +1,9 @@
 .reviews {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 45px;
+  background-color: $white;
+}
+
+.reviews__wrapper {
+  padding-bottom: 43px;
 }
 
 .reviews__title {
@@ -110,7 +110,6 @@
   }
 }
 
-
 .reviews__toggle:hover::before,
 .reviews__toggle:focus::before {
   background-color: $black-hover;
@@ -170,12 +169,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
+  .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: $tablet-width;
-    padding: 50px;
     padding-top: 77px;
     padding-left: 45px;
     padding-bottom: 67px;
@@ -263,7 +260,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
+  .reviews__wrapper {
     width: $desktop-container;
     padding-left: 170px;
     padding-right: 0;
