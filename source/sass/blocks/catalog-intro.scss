@@ -154,13 +154,7 @@
       background-size: $tablet-width;
     }
   }
-/*
-  .catalog-intro__nav {
-    width: $tablet-width;
 
-    @include zero-indent;
-  }
-*/
   .catalog-intro__list {
     width: $tablet-container;
     margin: 0 auto;
@@ -210,11 +204,7 @@
       background-size: 1250px 37px;
     }
   }
-/*
-  .catalog-intro__nav {
-    width: $desktop-width;
-  }
-*/
+
   .catalog-intro__list {
     width: $desktop-container;
     min-height: 135px;
