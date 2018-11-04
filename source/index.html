@@ -17,7 +17,7 @@
     <header class="page-header page-header--index">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active main-nav__item--logo">
+          <li class="main-nav__item main-nav__item--logo main-nav__item--mobile">
             <a class="main-nav__logo-link main-nav__logo-link--active" href="#">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -27,13 +27,13 @@
             </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </li>
-          <li class="main-nav__item main-nav__item--catalog">
+          <li class="main-nav__item main-nav__item--catalog main-nav__item--mobile">
             <a class="main-nav__link main-nav__link--catalog" href="catalog.html" title="Переход на страницу каталога">Каталог товаров</a>
           </li>
-          <li class="main-nav__item main-nav__item--form">
+          <li class="main-nav__item main-nav__item--form main-nav__item--mobile">
             <a class="main-nav__link main-nav__link--form" href="form.html" title="Переход на страницу формы заказа">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__item--search">
+          <li class="main-nav__item main-nav__item--search main-nav__item--mobile">
             <a class="main-nav__button main-nav__button--search" href="search.html" title="Переход на страницу поиска товаров на сайте">
               <svg class="main-nav__icon" width="17.6px" height="17.6px">
                 <use xlink:href="#icon-search"></use>
@@ -41,7 +41,7 @@
             </a>
             <a class="main-nav__link main-nav__link--search" href="search.html" title="Переход на страницу поиска товаров на сайте">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item main-nav__item--cart">
+          <li class="main-nav__item main-nav__item--cart main-nav__item--mobile">
             <button class="main-nav__button main-nav__button--cart" type="button" aria-label="Кнопка перехода в корзину">
               <svg class="main-nav__icon" width="20.294px" height="18.849px">
                 <use xlink:href="#icon-cart"></use>
@@ -216,31 +216,29 @@
           </a>
         </p>
         <div class="social">
-<!--          <div class="social__wrapper"> -->
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#" title="Переход на страницу в Инстаграме">
-                  <svg width="21.769px" height="21.334px">
-                    <use xlink:href="#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#" title="Переход на страницу в Фейсбуке">
-                  <svg  width="14.962px" height="27.718px">
-                    <use xlink:href="#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#" title="Переход на страницу в Твиттере">
-                  <svg class="social__link-icon" width="23.494px" height="20.168px">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-<!--          </div> -->
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#" title="Переход на страницу в Инстаграме">
+                <svg width="21.769px" height="21.334px">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#" title="Переход на страницу в Фейсбуке">
+                <svg  width="14.962px" height="27.718px">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" title="Переход на страницу в Твиттере">
+                <svg class="social__link-icon" width="23.494px" height="20.168px">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
@@ -270,7 +268,6 @@
         <button class="modal-form__button button" type="submit">Добавить</button>
       </form>
     </section>
-    <script src="js/menu.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/popup-scripts.js"></script>
   </body>
 </html>
