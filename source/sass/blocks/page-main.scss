@@ -1,4 +1,4 @@
-.page-main {
+.page-main__wrapper {
   padding-top: 70px;
 
   background-color: $bgmenu-gray;
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
+  .page-main__wrapper {
     padding-top: 65px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
