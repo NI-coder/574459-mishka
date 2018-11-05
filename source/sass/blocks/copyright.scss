@@ -61,3 +61,13 @@
     margin-right: -7px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__link-text {
+    padding-top: 62px;
+  }
+
+  .copyright__link svg {
+    margin-top: 52px;
+  }
+}
