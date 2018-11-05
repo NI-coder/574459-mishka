@@ -35,7 +35,7 @@
     color: $black;
 
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom center;
     background-size: $tablet-width 24px;
   }

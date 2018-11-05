@@ -2,6 +2,7 @@
 
 var navMain = document.querySelector(".main-nav");
 var navToggle = navMain.querySelector(".main-nav__toggle");
+// var bookingLink = document.querySelector(".best-seller__button");
 
 navMain.classList.remove("main-nav--nojs");
 
@@ -14,6 +15,11 @@ navToggle.addEventListener("click", function() {
     navMain.classList.remove("main-nav--opened");
   }
 });
+
+// bookingLink.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   popup.classList.add("order-modal--show");
+// });
 
 var cartLink = document.querySelectorAll(".popup-link");
 

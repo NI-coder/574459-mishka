@@ -1,17 +1,18 @@
 .map {
   position: relative;
 
-  width: $desktop-width;
+  width: 100vw;
   height: 457px;
   margin: 0 auto;
   padding: 0;
 
   line-height: 0;
+  text-align: center;
 
   background-color: rgb(232, 226, 217);
   background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 55% 145px, center;
+  background-position: 52% 145px, center;
   background-size: 67px 100px, 322px 457px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -20,7 +21,7 @@
 }
 
 .map-iframe {
-  width: 100%;
+  width: 100vw;
   height: 457px;
   margin: 0 auto;
 }
