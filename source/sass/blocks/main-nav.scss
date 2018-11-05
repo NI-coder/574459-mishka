@@ -353,17 +353,50 @@
     border-right: 1px solid $light-gray;
   }
 
-  .main-nav__item--catalog {
+  .main-nav__item--form {
+    order: 2;
+  }
+
+  .main-nav__item--logo {
+    order: 3;
+  }
+
+  .main-nav__item--search {
+    order: 4;
+  }
+
+  .main-nav__item--cart {
+    order: 5;
+  }
+
+  .main-nav__item--new {
+    order: 6;
+    display: block;
+
+    border: none;
+  }
+
+  .main-nav__item--sale {
+    order: 7;
+    display: block;
+
+    border: none;
+  }
+
+  .main-nav__item--delivery {
+    order: 8;
+    margin-left: auto;
+
+    border: none;
+  }
+
+  .main-nav__container--catalog {
     width: 235px;
     padding-left: 50px;
 
     font-size: 17px;
 
     background-color: $white;
-  }
-
-  .main-nav__item--form {
-    order: 2;
   }
 
   .main-nav__container--form {
@@ -375,14 +408,36 @@
     background-color: $white;
   }
 
-  .main-nav__item--logo {
-    order: 3;
-  }
-
   .main-nav__container--logo {
     width: 280px;
     padding-left: 30px;
     padding-top: 9px;
+  }
+
+  .main-nav__container--cart {
+    width: 315px;
+    padding-left: 60px;
+    padding-right: 50px;
+
+    font-size: 17px;
+  }
+
+  .main-nav__container--new {
+    width: 235px;
+    padding-left: 50px;
+    padding-top: 18px;
+  }
+
+  .main-nav__container--sale {
+    width: 235px;
+    padding-left: 35px;
+    padding-top: 18px;
+  }
+
+  .main-nav__container--delivery {
+    width: 315px;
+    padding-right: 50px;
+    padding-top: 18px;
   }
 
   .main-nav__logo-link {
@@ -394,63 +449,5 @@
   .main-nav__logo-image {
     width: 149px;
     height: 72px;
-  }
-
-  .main-nav__item--search {
-    order: 4;
-  }
-
-  .main-nav__item--search {
-//    width: 83px;
-  }
-
-  .main-nav__item--cart {
-    order: 5;
-  }
-
-  .main-nav__container--cart {
-    width: 315px;
-    padding-left: 60px;
-    padding-right: 50px;
-
-    font-size: 17px;
-  }
-
-  .main-nav__item--new {
-    order: 6;
-    display: block;
-
-    border: none;
-  }
-
-  .main-nav__container--new {
-    width: 235px;
-    padding-left: 50px;
-    padding-top: 18px;
-  }
-
-  .main-nav__item--sale {
-    order: 7;
-    display: block;
-
-    border: none;
-  }
-
-  .main-nav__container--sale {
-    width: 235px;
-    padding-left: 35px;
-    padding-top: 18px;
-  }
-
-  .main-nav__item--delivery {
-    order: 8;
-    margin-left: auto;
-
-    border: none;
-  }
-  .main-nav__container--delivery {
-    width: 315px;
-    padding-right: 50px;
-    padding-top: 18px;
   }
 }
