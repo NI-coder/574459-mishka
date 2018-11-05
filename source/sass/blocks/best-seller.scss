@@ -1,7 +1,4 @@
 .best-seller {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding: 30px;
   padding-top: 27px;
   padding-bottom: 35px;
   background-color: $white;
@@ -107,13 +104,16 @@
 
 @media (min-width: $tablet-width) {
   .best-seller {
+    @include zero-indent;
+  }
+
+  .best-seller__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: $tablet-width;
-    padding: 50px;
     padding-left: 47px;
     padding-top: 35px;
+    padding-bottom: 50px;
   }
 
   .best-seller__title {
@@ -199,11 +199,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .best-seller {
+  .best-seller__wrapper {
     position: relative;
 
     justify-content: flex-start;
-    width: $desktop-width;
     padding: 108px 395px 75px 222px;
   }
 

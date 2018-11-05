@@ -1,6 +1,5 @@
 .page-catalog {
-  width: $mobile-width;
-  margin: 0 auto;
+  background-color: $white;
 }
 
 .page-catalog__title {
@@ -17,12 +16,15 @@
   background-color: $bg-gray;
 }
 
+.page-catalog__white-bg {
+  background-color: $white;
+}
+
 .page-catalog__list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   list-style: none;
 }
@@ -34,13 +36,23 @@
   margin-bottom: 33px;
 
   line-height: 16px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+
+    background-color: transparentize($text-color, 0.3);
+    border-color: transparentize($text-color, 1);
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .page-catalog {
-    width: $tablet-width;
-  }
-
   .page-catalog__title {
     min-height: 0;
     padding-top: 7px;
@@ -52,11 +64,7 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
-    background-size: $tablet-width;
-  }
-
-  .white-background {
-    margin-top: -1px;
+    background-size: $tablet-width 24px;
   }
 
   .page-catalog__list {
@@ -78,10 +86,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-catalog {
-    width: $desktop-width;
-  }
-
   .page-catalog__title {
     padding-top: 4px;
     padding-bottom: 120px;
@@ -89,10 +93,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: bottom center;
-    background-size: $desktop-width;
+    background-size: $desktop-width 34px;
   }
 
   .page-catalog__list {

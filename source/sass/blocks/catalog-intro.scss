@@ -1,8 +1,3 @@
-.catalog-intro__nav {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
 .catalog-intro__list {
   display: flex;
   flex-wrap: wrap;
@@ -17,21 +12,28 @@
   width: 100%;
 
   @include zero-indent;
+
+  &--interior {
+    background-color: $green;
+  }
+
+  &--toys {
+    background-color: $fade-green;
+  }
 }
 
 .catalog-intro__link {
   display: block;
+  width: $mobile-width;
   min-height: 103px;
-  margin: 0;
-  padding-top: 25px;
+  margin: 0 auto;
   padding-left: 30px;
+  padding-top: 25px;
   padding-bottom: 31px;
 
   font-size: 19px;
   line-height: 24px;
   color: $white;
-
-  background-color: $green;
 
   &:hover,
   &:focus {
@@ -148,15 +150,10 @@
       height: 23px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
       background-position: center top;
-      background-size: $tablet-width;
+      background-size: $tablet-width 24px;
     }
-  }
-
-  .catalog-intro__nav {
-    width: $tablet-width;
-
-    @include zero-indent;
   }
 
   .catalog-intro__list {
@@ -169,6 +166,7 @@
   }
 
   .catalog-intro__link {
+    width: 100%;
     min-height: 128px;
     padding-top: 27px;
     padding-left: 35px;
@@ -206,10 +204,6 @@
 
       background-size: 1250px 37px;
     }
-  }
-
-  .catalog-intro__nav {
-    width: $desktop-width;
   }
 
   .catalog-intro__list {

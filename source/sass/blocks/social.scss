@@ -1,25 +1,29 @@
 .social {
   width: $mobile-width;
-  padding-right: 5px;
 }
 
 .social__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  width: 141px;
+  width: $mobile-container;
   min-height: 80px;
-
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 27px;
 
   list-style: none;
+  text-align: center;
+
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .social__item {
-  padding-top: 5px;
+  display: inline-block;
+  margin-right: 35px;
+
+  vertical-align: middle;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link:hover svg,
@@ -37,11 +41,14 @@
   }
 
   .social__list {
+    width: 100%;
     min-height: 143px;
-    padding-right: 0;
+    padding-top: 60px;
   }
+}
 
-  .social__item {
-    padding-top: 10px;
+@media (min-width: $desktop-width) {
+  .social {
+    width: 348px;
   }
 }

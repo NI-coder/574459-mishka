@@ -1,11 +1,12 @@
+.page-header {
+  background-color: $white;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
-    margin: 0 auto;
-
     background-image: linear-gradient($white 89px, $bg-gray 89px);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: top center;
   }
 
   .page-header--index {
@@ -17,11 +18,5 @@
       background-image: url("../img/hero-tablet@2x.jpg"), linear-gradient($white 89px, $bgmenu-gray 89px);
       background-size: 1150px 746px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    width: $desktop-width;
   }
 }
