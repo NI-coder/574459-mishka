@@ -16,7 +16,8 @@
   padding-bottom: 5px;
 }
 
-.form__container--contacts {
+.form__container--contacts,
+.form__container--additional {
   padding-bottom: 0;
 }
 
@@ -215,6 +216,10 @@
   }
 }
 
+.form__label--name {
+  padding-top: 9px;
+}
+
 .form__label--name::before {
   bottom: 12px;
 }
@@ -241,7 +246,7 @@
 }
 
 .form__input--text-name {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .form__input--text-contacts {
@@ -395,6 +400,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .form__item--wishes {
@@ -531,8 +537,8 @@
     flex-grow: 1;
     width: auto;
     height: 52px;
-    padding-left: 18px;
-    padding-right: 0;
+    padding: 0;
+    padding-left: 17px;
 
     font-size: 19px;
   }
@@ -590,13 +596,18 @@
     padding-right: 50px;
   }
 
+  .form__container--name {
+    padding-top: 49px;
+  }
+
   .form__container--contacts {
-    padding-bottom: 25px;
+    padding-bottom: 28px;
   }
 
   .form__container--additional {
     padding-left: 110px;
     padding-right: 225px;
+    padding-bottom: 0;
   }
 
   .form__item--wishes {
@@ -605,6 +616,14 @@
 
   .form__title {
     width: 115px;
+  }
+
+  .form__title--contacts {
+    padding-top: 21px;
+  }
+
+  .form__title--contacts::before {
+    bottom: 23px;
   }
 
   .form__title--contacts::before,
@@ -638,6 +657,7 @@
 
   .form__label--name {
     padding-bottom: 21px;
+    margin-bottom: 22px;
   }
 
   .form__label--name::before {
@@ -657,7 +677,7 @@
   }
 
   .form__input-icon--email {
-    top: 10px;
+    top: 13px;
     right: 4px;
   }
 

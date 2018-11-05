@@ -23,7 +23,7 @@
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                  <img class="main-nav__logo-image main-nav__logo-image--active" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»">
+                  <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»">
                 </picture>
               </a>
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -31,7 +31,7 @@
           </li>
           <li class="main-nav__item main-nav__item--catalog main-nav__item--mobile">
             <div class="main-nav__container main-nav__container--catalog">
-              <a class="main-nav__link main-nav__link--catalog main-nav__link--active" href="form.html" title="Текущая страница - страница каталога">Каталог товаров</a>
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html" title="Текущая страница - страница каталога">Каталог товаров</a>
             </div>
           </li>
           <li class="main-nav__item main-nav__item--form main-nav__item--mobile">
@@ -180,7 +180,7 @@
             </div>
           </section>
           <div class="form__additional">
-            <div class="container form__container--additional">
+            <div class="container form__container form__container--additional">
               <p class="form__item form__item--wishes">
                 <textarea class="form__textarea" id="addition-field" name="addition" rows="6" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 <label class="form__title form__title--wishes" for="addition-field">Доп</label>
