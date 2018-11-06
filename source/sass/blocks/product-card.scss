@@ -117,7 +117,7 @@
 
 .product-card__button {
   width: 20px;
-  height: auto;
+  min-height: 30px;
 
   font-size: 0;
   line-height: 0;
@@ -194,6 +194,12 @@
     width: 316px;
     min-height: 660px;
     margin: 0;
+    margin-top: 50px;
+    margin-right: 50px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   .product-card__image,

@@ -43,6 +43,7 @@
 }
 
 .contacts__item {
+  flex-shrink: 0;
   width: 77px;
 
   @include zero-indent;
@@ -75,7 +76,7 @@
 }
 
 .contacts__text--address {
-  padding-left: 5px;
+//  padding-left: 5px;
 }
 
 .contacts__map {

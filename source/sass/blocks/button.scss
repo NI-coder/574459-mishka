@@ -1,6 +1,6 @@
 .button {
   display: block;
-  height: $cell-height;
+  min-height: $cell-height;
 
   @include zero-indent;
 

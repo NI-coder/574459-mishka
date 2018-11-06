@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var navMain = document.querySelector(".main-nav");
 var navToggle = navMain.querySelector(".main-nav__toggle");
