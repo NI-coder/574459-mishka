@@ -189,7 +189,7 @@
 
   .reviews__title {
     width: 330px;
-    margin-bottom: 49px;
+    margin-bottom: 46px;
 
     font-size: 43px;
     line-height: 50px;
@@ -254,6 +254,7 @@
     width: 175px;
     padding-top: 16px;
     margin: 0;
+    margin-bottom: 46px;
 
     font-size: 17px;
   }
@@ -282,10 +283,19 @@
     font-size: 17px;
   }
 
+  .reviews__toggle::before {
+    top: 23px;
+  }
+
+  .reviews__toggle::after {
+    top: 13px;
+  }
+
   .reviews__button {
     order: 1;
     width: 175px;
     margin-top: 8px;
+    padding-top: 15px;
 
     font-size: 17px;
   }

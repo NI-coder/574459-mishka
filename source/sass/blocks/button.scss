@@ -2,7 +2,8 @@
   display: block;
   min-height: $cell-height;
 
-  @include zero-indent;
+  padding: 5px;
+  margin: 0;
 
   font-size: 17px;
   line-height: 20px;
