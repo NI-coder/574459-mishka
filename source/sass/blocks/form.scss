@@ -583,7 +583,7 @@
     order: 2;
     width: 230px;
 
-    @include zero-indent;
+    margin: 0;
   }
 }
 
@@ -692,7 +692,7 @@
   }
 
   .form__button {
-    @include zero-indent;
+    margin: 0;
     margin-left: 115px;
   }
 }
